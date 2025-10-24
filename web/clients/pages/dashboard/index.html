@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Welcome to warrisport, your home for sports betting sites"
+    />
+    <!-- Title  -->
+    <title>Client Area - Dashboard</title>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="wrap">
+      <!-- Main Container -->
+      <div class="container">
+        <div class="ws-row flex gap-8">
+          <!-- SideBar Start Here -->
+          <div
+            class="sideBar flex flex-col gap-72 w-2/5 bg-emerald-500 h-screen shadow-lg"
+          >
+            <ul class="sidebar--items p-5 text-white">
+              <li class=""><a href="../dashboard/">Overview</a></li>
+              <li class=""><a href="../deposit/">Deposit</a></li>
+              <li class=""><a href="../bet/">Bet History</a></li>
+              <li class=""><a href="../withdraw/">Withdraw</a></li>
+              <li class=""><a href="../referral/">Referral</a></li>
+              <li class=""><a href="../support/">Support</a></li>
+              <li class=""><a href="../settings/">Settings</a></li>
+            </ul>
+            <ul class="user-detail p-5 flex items-center gap-3 border-t">
+              <ion-icon name="person-circle-outline" class="text-white text-[40px]"></ion-icon>
+              <div class="user-balance text-white flex flex-col">
+                <span>Balance:</span>
+                <span>NGN: 0.00</span>
+              </div>
+            </ul>
+          </div>
+          <!-- SideBar ends here  -->
+          <div class="ws-dashbaord-grid flex flex-col items-center">
+            <div
+              class="dashboard-content flex gap-5 justify-center items-center pt-5"
+            >
+              <div
+                class="bg-white w-80 h-48 shadow-lg rounded-sm flex items-center mx-auto"
+              >
+                <ion-icon
+                  name="wallet-outline"
+                  class="text-gray-600 text-[70px] p-[18px]"
+                ></ion-icon>
+                <div class="ws-icons">
+                  <h4 class="font-semibold">Main Balance</h4>
+                  <h1 class="text-[20px] text-[#F26C66]">&#8358; 0.00</h1>
+                </div>
+              </div>
+              <div class="bg-white-800 w-80 h-48 shadow-lg rounded-sm flex items-center mx-auto">
+                <ion-icon name="trending-up-outline" class="text-gray-600 text-[70px] p-[18px]"></ion-icon>
+                <div class="ws-icons">
+                  <h4 class="font-semibold">Total Earnings</h4>
+                  <h1 class="text-[20px] text-[#F26C66]">&#8358; 0.00</h1>
+                </div>
+              </div>
+              <div class="bg-white w-80 h-48 shadow-lg rounded-sm flex items-center mx-auto">
+                <ion-icon
+                  name="trending-down-outline"
+                  class="text-gray-600 text-[70px] p-[18px]"
+                ></ion-icon>
+                <div class="ws-icons">
+                  <h4 class="font-semibold">Total Lost</h4>
+                  <h1 class="text-[20px] text-[#F26C66]">&#8358; 0.00</h1>
+                </div>
+              </div>
+            </div>
+            <div
+              class="dashboard-content flex gap-5 justify-center items-center pt-5"
+            >
+              <div class="bg-white w-80 h-48 shadow-lg rounded-sm flex items-center mx-auto">
+                <ion-icon
+                  name="ribbon-outline"
+                  class="text-gray-600 text-[70px] p-[18px]"
+                ></ion-icon>
+                <div class="ws-icons">
+                  <h4 class="font-semibold">Total Lost</h4>
+                  <h1 class="text-[20px] text-[#F26C66]">&#8358; 0.00</h1>
+                </div>
+              </div>
+              <div class="bg-white w-80 h-48 shadow-lg rounded-sm flex items-center mx-auto">
+                <ion-icon
+                  name="cash-outline"
+                  class="text-gray-600 text-[70px] p-[18px]"
+                ></ion-icon>
+                <div class="ws-icons">
+                  <h4 class="font-semibold">Total Lost</h4>
+                  <h1 class="text-[20px] text-[#F26C66]">&#8358; 0.00</h1>
+                </div>
+              </div>
+              <div class="bg-white w-80 h-48 shadow-lg rounded-sm flex items-center mx-auto">
+                <ion-icon
+                  name="ticket-outline"
+                  class="text-gray-600 text-[70px] p-[18px]"
+                ></ion-icon>
+                <div class="ws-icons">
+                  <h4 class="font-semibold">Total Bet</h4>
+                  <h1 class="text-[20px] text-[#F26C66]">&#8358; 0.00</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
