@@ -27,12 +27,13 @@
     <div class="wrap">
       <!-- Main Container -->
       <div class="container">
-        <div class="ws-row flex gap-8">
+        <div class="ws-row flex gap-4">
           <!-- SideBar Start Here -->
           <div
-            class="sideBar flex flex-col gap-60 w-2/5 bg-emerald-500 h-screen shadow-lg"
+          class="sideBar flex flex-col gap-60 w-[10rem] bg-emerald-500 h-screen shadow-lg"
           >
-            <ul class="sidebar--items p-5 text-white">
+          <ul class="sidebar--items p-5 text-white">
+              <img class="h-[100px] w-[100px] p-3" src="../../assets/img/logo192.png" alt="warri sport logo">
               <li class="flex items-center gap-2">
                 <span class="text-[25px] cursor-pointer"
                   ><i class="fa-light fa-house"></i
@@ -41,118 +42,50 @@
               </li>
               <li class="flex items-center gap-2">
                 <span class="text-[25px] cursor-pointer"
-                  ><i class="fa-light fa-money-bill-transfer"></i></span>
-                <a href="../deposit/">Deposit</a>
+                  ><i class="fa-light fa-handshake"></i></span>
+                <a href="../deposit/">Peer2Peer</a>
               </li>
               <li class="flex items-center gap-2">
                 <span class="text-[25px] cursor-pointer"
-                  ><i class="fa-light fa-ballot-check"></i></span>
-                <a href="../bet/">Bet History</a>
+                  ><i class="fa-light fa-court-sport"></i></span>
+                <a href="../sportsbook">Sportbook</a>
               </li>
               <li class="flex items-center gap-2">
                 <span class="text-[25px] cursor-pointer"
-                  ><i class="fa-light fa-money-from-bracket"></i></span>
-                <a href="../withdraw/">Withdraw</a>
+                  ><i class="fa-light fa-money-bills"></i></span>
+                <a href="../withdraw/">Transactions</a>
               </li>
               <li class="flex items-center gap-2">
                 <span class="text-[25px] cursor-pointer"
-                  ><i class="fa-light fa-people-arrows"></i></span>
-                <a href="../referral/">Referral</a>
+                  ><i class="fa-light fa-chair-office"></i></span>
+                <a href="../career">Career</a>
               </li>
               <li class="flex items-center gap-2">
                 <span class="text-[25px] cursor-pointer"
                   ><i class="fa-light fa-headset"></i></i></span>
                 <a href="../support/">Support</a>
               </li>
-              <li class="flex items-center gap-2">
-                <span class="text-[25px] cursor-pointer"
-                  ><i class="fa-light fa-gear"></i></span>
-                <a href="../settings/">Settings</a>
-              </li>
             </ul>
           </div>
           <!-- SideBar ends here  -->
-          <div class="ws-dashbaord-grid flex flex-col items-center">
-            <div
-              class="dashboard-content flex gap-5 justify-center items-center pt-5"
-            >
-              <div
-                class="bg-white w-80 h-48 shadow-lg rounded-sm flex items-center mx-auto"
-              >
-                <ion-icon
-                  name="wallet-outline"
-                  class="text-gray-600 text-[70px] p-[18px]"
-                ></ion-icon>
-                <div class="ws-icons">
-                  <h4 class="font-semibold">Main Balance</h4>
-                  <h1 class="text-[20px] text-[#F26C66]">&#8358; 0.00</h1>
+          <div class="main--dashboard flex flex-col m-auto justify-center space-y-3">
+             <div class="ws--dashboard-card flex space-x-1">
+              <div class="card bg-white h-[10rem] w-[12rem] border-t-4 border-emerald-600"></div>
+              <div class="card bg-white h-[10rem] w-[12rem] border-t-4 border-emerald-600"></div>
+              <div class="card bg-white h-[10rem] w-[12rem] border-t-4 border-emerald-600"></div>
+              <div class="card bg-white h-[10rem] w-[12rem] border-t-4 border-emerald-600"></div>
+              <div class="card bg-white h-[10rem] w-[12rem] border-t-4 border-emerald-600"></div>
+              <div class="card bg-white h-[10rem] w-[12rem] border-t-4 border-emerald-600"></div>
+             </div>
+             <div class="ws--dashboard-card flex space-x-3">
+              <div class="card-lg bg-white h-[28rem] w-[45rem] border-t-4 border-emerald-600"></div>
+              <div class="card-md space-y-3">
+                <div class="card-sm bg-white h-[8rem] w-[27.5rem] flex justify-center">
+                  <h1 class="mt-2 font-light text-sm px-2">Top 3 Referrals</h1>
                 </div>
+                <div class="card-md bg-white h-[19.2rem] w-[27.5rem] border-t-4 border-emerald-600"></div>
               </div>
-              <div
-                class="bg-white w-80 h-48 shadow-lg rounded-sm flex items-center mx-auto"
-              >
-                <ion-icon
-                  name="trending-up-outline"
-                  class="text-gray-600 text-[70px] p-[18px]"
-                ></ion-icon>
-                <div class="ws-icons">
-                  <h4 class="font-semibold">Total Earnings</h4>
-                  <h1 class="text-[20px] text-[#F26C66]">&#8358; 0.00</h1>
-                </div>
-              </div>
-              <div
-                class="bg-white w-80 h-48 shadow-lg rounded-sm flex items-center mx-auto"
-              >
-                <ion-icon
-                  name="trending-down-outline"
-                  class="text-gray-600 text-[70px] p-[18px]"
-                ></ion-icon>
-                <div class="ws-icons">
-                  <h4 class="font-semibold">Total Lost</h4>
-                  <h1 class="text-[20px] text-[#F26C66]">&#8358; 0.00</h1>
-                </div>
-              </div>
-            </div>
-            <div
-              class="dashboard-content flex gap-5 justify-center items-center pt-5"
-            >
-              <div
-                class="bg-white w-80 h-48 shadow-lg rounded-sm flex items-center mx-auto"
-              >
-                <ion-icon
-                  name="ribbon-outline"
-                  class="text-gray-600 text-[70px] p-[18px]"
-                ></ion-icon>
-                <div class="ws-icons">
-                  <h4 class="font-semibold">Total Win</h4>
-                  <h1 class="text-[20px] text-[#F26C66]">&#8358; 0.00</h1>
-                </div>
-              </div>
-              <div
-                class="bg-white w-80 h-48 shadow-lg rounded-sm flex items-center mx-auto"
-              >
-                <ion-icon
-                  name="cash-outline"
-                  class="text-gray-600 text-[70px] p-[18px]"
-                ></ion-icon>
-                <div class="ws-icons">
-                  <h4 class="font-semibold">Total Cashout</h4>
-                  <h1 class="text-[20px] text-[#F26C66]">&#8358; 0.00</h1>
-                </div>
-              </div>
-              <div
-                class="bg-white w-80 h-48 shadow-lg rounded-sm flex items-center mx-auto"
-              >
-                <ion-icon
-                  name="ticket-outline"
-                  class="text-gray-600 text-[70px] p-[18px]"
-                ></ion-icon>
-                <div class="ws-icons">
-                  <h4 class="font-semibold">Total Bet</h4>
-                  <h1 class="text-[20px] text-[#F26C66]">&#8358; 0.00</h1>
-                </div>
-              </div>
-            </div>
+             </div>
           </div>
         </div>
       </div>
