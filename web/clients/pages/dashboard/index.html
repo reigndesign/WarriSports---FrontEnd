@@ -30,9 +30,10 @@
         <div class="ws-row flex gap-8">
           <!-- SideBar Start Here -->
           <div
-            class="sideBar flex flex-col gap-60 w-2/5 bg-emerald-500 h-screen shadow-lg"
+          class="sideBar flex flex-col gap-[8rem] w-[10rem] bg-emerald-500 h-screen shadow-lg"
           >
-            <ul class="sidebar--items p-5 text-white">
+          <ul class="sidebar--items p-5 text-white">
+              <img class="h-[100px] w-[100px] p-3" src="../../assets/img/logo192.png" alt="warri sports logo">
               <li class="flex items-center gap-2">
                 <span class="text-[25px] cursor-pointer"
                   ><i class="fa-light fa-house"></i
@@ -42,7 +43,7 @@
               <li class="flex items-center gap-2">
                 <span class="text-[25px] cursor-pointer"
                   ><i class="fa-light fa-money-bill-transfer"></i></span>
-                <a href="../deposit/">Deposit</a>
+                <a href="../../pages/deposit/">Deposit</a>
               </li>
               <li class="flex items-center gap-2">
                 <span class="text-[25px] cursor-pointer"
@@ -66,15 +67,11 @@
               </li>
               <li class="flex items-center gap-2">
                 <span class="text-[25px] cursor-pointer"
-                  ><i class="fa-light fa-gear"></i></span>
-                <a href="../settings/">Settings</a>
+                  ><i class="fa-light fa-circle-user"></i></span>
+                <a href="../account/">My Account</a>
               </li>
             </ul>
             <ul class="user-detail p-5 flex items-center gap-3 border-t">
-              <ion-icon
-                name="person-circle-outline"
-                class="text-white text-[40px]"
-              ></ion-icon>
               <div class="user-balance text-white flex flex-col">
                 <span>Balance:</span>
                 <span>NGN: 0.00</span>
@@ -82,9 +79,13 @@
             </ul>
           </div>
           <!-- SideBar ends here  -->
-          <div class="ws-dashbaord-grid flex flex-col items-center">
+           <div class="welcome absolute left-[15rem] top-[3rem] ">
+            <h1 class="text-[1.5rem] ">Welcome to Warri Sports {% user.name %}</h1>
+           </div>
+          <div class="ws-dashbaord-grid flex flex-col mx-auto place-content-center">
+            
             <div
-              class="dashboard-content flex gap-5 justify-center items-center pt-5"
+            class="dashboard-content flex gap-5 justify-center items-center pt-5"
             >
               <div
                 class="bg-white w-80 h-48 shadow-lg rounded-sm flex items-center mx-auto"

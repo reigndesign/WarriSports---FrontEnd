@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- page title -->
+  <title>My Account</title>
+  <!-- Link the main Font Awesome CSS file -->
+    <link
+      rel="stylesheet"
+      href="../../assets/fonts/fontawesome/all.css"
+      crossorigin="anonymous"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../../assets/css/clientStyle.css" />
+    <!-- Tailwind CSS -->
+    <script src="../../assets/js/tailwindcss.js"></script>
+</head>
+<body>
+  <div class="wrap">
+      <!-- Main Container -->
+      <div class="container">
+        <div class="ws-row flex flex gap-8">
+          <!-- SideBar Start Here -->
+          <div
+          class="sideBar flex flex-col gap-[8rem] w-[10rem] bg-emerald-500 h-screen shadow-lg"
+          >
+          <ul class="sidebar--items p-5 text-white">
+              <img class="h-[100px] w-[100px] p-3" src="../../assets/img/logo192.png" alt="warri sports logo">
+              <li class="flex items-center gap-2">
+                <span class="text-[25px] cursor-pointer"
+                  ><i class="fa-light fa-house"></i
+                ></span>
+                <a href="../dashboard/">Overview</a>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="text-[25px] cursor-pointer"
+                  ><i class="fa-light fa-money-bill-transfer"></i></span>
+                <a href="../../pages/deposit/">Deposit</a>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="text-[25px] cursor-pointer"
+                  ><i class="fa-light fa-ballot-check"></i></span>
+                <a href="../bet/">Bet History</a>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="text-[25px] cursor-pointer"
+                  ><i class="fa-light fa-money-from-bracket"></i></span>
+                <a href="../withdraw/">Withdraw</a>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="text-[25px] cursor-pointer"
+                  ><i class="fa-light fa-people-arrows"></i></span>
+                <a href="../referral/">Referral</a>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="text-[25px] cursor-pointer"
+                  ><i class="fa-light fa-headset"></i></i></span>
+                <a href="../support/">Support</a>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="text-[25px] cursor-pointer"
+                  ><i class="fa-light fa-circle-user"></i></span>
+                <a href="../account/">My Account</a>
+              </li>
+            </ul>
+            <ul class="user-detail p-5 flex items-center gap-3 border-t">
+              <div class="user-balance text-white flex flex-col">
+                <span>Balance:</span>
+                <span>NGN: 0.00</span>
+              </div>
+            </ul>
+          </div>
+          <!-- SideBar ends here  -->
+          
+        </div>
+      </div>
+    </div>
+    <!-- Ionicons Module -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+</body>
+</html>
