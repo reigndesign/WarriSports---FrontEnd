@@ -36,7 +36,7 @@
               <li class="flex items-center gap-2">
                 <span class="text-[25px] cursor-pointer"
                   ><i class="fa-light fa-money-bill-transfer"></i></span>
-                <a href="../pages/deposit">Deposit</a>
+                <a href="./">Deposit</a>
               </li>
               <li class="flex items-center gap-2">
                 <span class="text-[25px] cursor-pointer"
@@ -76,7 +76,7 @@
           <!-- Deposit body content start here -->
 
            <!-- Deposit Header Buttons -->
-          <div class="deposit--body flex m-auto bg-white h-[30rem] w-[60rem] shadow-lg border-b-4 border-emerald-600">
+          <div class="deposit--body flex flex-col m-auto bg-white h-[35rem] w-[60rem] shadow-lg border-b-4 border-emerald-600">
             <div class="deposit--content-options flex space-x-6 mx-auto mt-10">
               <div class="transfer bg-emerald-400 hover:bg-emerald-600 h-[3rem] w-[8rem] flex items-center justify-center cursor-pointer ">
                 <h1 class="transfer--text text-white text-lg font-light">Transfer</h1>
@@ -87,6 +87,33 @@
               <div class="card bg-emerald-400 hover:bg-emerald-600 h-[3rem] w-[8rem] flex items-center justify-center cursor-pointer ">
                 <h1 class="card--text text-white text-lg font-light">Card</h1>
               </div>
+            </div>
+            <div class="deposit--options mx-auto mt-10">
+              <!-- <h1 class="font-bold text-2xl text-emerald-500">Fund Your Wallet</h1> -->
+              <form action="/" class="transfer--form mt-10 flex flex-col items-center place-content-center">
+                <div class="input-amount flex items-center space-x-6">
+                  <label class="font-light text-lg" for="transfer">Amount (NGN)</label>
+                <input class="form-input border border-emerald-500 p-2 outline-none" type="text" name="transfer" id="transfer" placeholder="Enter Amount">
+                </div>
+                <button class="text-sm font-light mt-10 px-[4.5rem] py-3 bg-emerald-400 hover:bg-emerald-600 text-white ml-[9rem]">Deposit</button>
+              </form>
+              <br>
+              <hr width="700px" size="7px">
+              <ul class="deposit--step text-gray-400 mt-10 space-y-2">
+                <h1 class="font-semibold">Payment Step</h1>
+                <li>
+                  <p>Enter the amount you want to deposit and click 'Deposit' button.</p>
+                </li>
+                <li>
+                  <p>You will be giving a temporary transfer account (it expires after 30 mins).</p>
+                </li>
+                <li>
+                  <p>Transfer the exact amoount entered via online banking or USSD for succesful deposit. </p>
+                </li>
+                <li>
+                  <p>Deposit usually reflect within 10 mins. If it's not successfull kindly reachout to your bank for assitance.</p>
+                </li>
+              </ul>
             </div>
           </div>
         </div>

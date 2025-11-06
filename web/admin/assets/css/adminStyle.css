@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600;700&family=Oxygen:wght@300;400&family=Rubik:ital,wght@0,300..900;1,300..900&family=Viga&display=swap');
 
+/* 
+Custom Color
+-------------
+#34D399
+
+*/
+
 /* Tailwind CSS
 @import "tailwindcss"; */
 
@@ -12,7 +19,7 @@
 }
 
 body {
-  background: #F8F9FB;
+  background: #f7f7f7;
   font-family: "Fira Sans", sans-serif;
   font-size: 14px;
   font-weight: 400;
