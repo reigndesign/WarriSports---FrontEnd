@@ -94,8 +94,59 @@
             </ul>
           </div>
           <!-- SideBar ends here  -->
-
-
+          <div class="deposit--body flex flex-col m-auto bg-white h-[35rem] w-[60rem] shadow-lg border-b-4 border-emerald-600">
+            <div class="deposit--content-options flex space-x-3 ml-3 mt-10">
+              <div class="transfer bg-emerald-400 hover:bg-emerald-600 h-[3rem] w-[10rem] flex items-center justify-center cursor-pointer transition duration-300 ease-in-out">
+                <h1 class="transfer--text text-white text-lg font-light ">Bank Transfer</h1>
+              </div>
+              <!-- <div class="bank bg-emerald-400 hover:bg-emerald-600 h-[3rem] w-[10rem] flex items-center justify-center cursor-pointer transition duration-300 ease-in-out">
+                <h1 class="bank--text text-white text-lg font-light">Withdrawal Histroy</h1>
+              </div> -->
+              <div class="card bg-emerald-400 hover:bg-emerald-600 h-[3rem] w-[10rem] flex items-center justify-center cursor-pointer transition duration-300 ease-in-out">
+                <h1 class="card--text text-white text-lg font-light">Add Bank</h1>
+              </div>
+            </div>
+            <br>
+            <div class="deposit--options mx-auto mt-10">
+              <hr width="700px">
+              <!-- <h1 class="font-thin text-lg text-emerald-500">Fund Your Wallet</h1> -->
+              <!-- deposit form start here -->
+              <form action="/" class="transfer--form mt-10 flex flex-col items-center space-y-12">
+                <div class="bank--info space-x-3 flex items-center">
+                  <label for="bank--info" class="font-light text-lg">Bank Information</label>
+                  <select class="border border-emerald-500 p-2 outline-0 w-[10rem] h-10 text-gray-400 font-light text-lg" name="bank--info" id="bank--info">
+                    <option value="" >
+                      <span>Access Bank</span>
+                    </option>
+                  </select>
+                  <input class="form-input border border-emerald-500 p-2 outline-none h-10" type="text" name="transfer" id="transfer" placeholder="Account Number">
+                </div>
+                <div class="input-amount items-center space-x-6 mr-40">
+                  <label class="font-light text-lg" for="transfer">Amount (NGN)</label>
+                  <input class="form-input border border-emerald-500 p-2 outline-none h-10" type="text" name="transfer" id="transfer" placeholder="Enter Amount">
+                </div>
+                <button class="text-sm font-light mt-10 px-[4.2rem] py-3 bg-emerald-400 hover:bg-emerald-600 text-white ml-[8.8rem] transition duration-300 ease-in-out">Withdraw</button>
+              </form>
+              <!-- deposit form end here -->
+              <br>
+              <hr width="700px">
+              <!-- <ul class="deposit--step text-gray-400 mt-10 space-y-2">
+                <h1 class="font-semibold">Payment Step</h1>
+                <li class="list-decimal">
+                  <p>Enter the amount you want to deposit and click 'Deposit' button.</p>
+                </li>
+                <li class="list-decimal">
+                  <p>You will be giving a temporary transfer account (it expires after 30 mins).</p>
+                </li>
+                <li class="list-decimal">
+                  <p>Transfer the exact amoount entered via online banking or USSD for succesful deposit. </p>
+                </li>
+                <li class="list-decimal">
+                  <p>Deposit usually reflect within 10 mins. If it's not successfull kindly reachout to your bank for assitance.</p>
+                </li>
+              </ul> -->
+            </div>
+          </div>
         </div>
       </div>
     </div>
