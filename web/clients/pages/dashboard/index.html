@@ -23,10 +23,9 @@
     <!-- Tailwind CSS -->
     <script src="../../assets/js/tailwindcss.js"></script>
 
-
     <!-- Plugin -->
-     <!-- Uderscore -->
-      <script src="https://cdn.jsdelivr.net/npm/underscore@1.13.7/underscore-umd-min.js
+    <!-- Uderscore -->
+    <script src="https://cdn.jsdelivr.net/npm/underscore@1.13.7/underscore-umd-min.js
 "></script>
   </head>
   <body>
@@ -36,10 +35,14 @@
         <div class="ws-row flex gap-8">
           <!-- SideBar Start Here -->
           <div
-          class="sideBar flex flex-col gap-[8rem] w-[13rem] bg-emerald-500 h-screen shadow-lg"
+            class="sideBar flex flex-col gap-[8rem] w-[13rem] bg-emerald-500 h-screen shadow-lg"
           >
-          <ul class="sidebar--items p-5 text-white">
-              <img class="h-[100px] w-[100px] p-3" src="../../assets/img/logo192.png" alt="warri sports logo">
+            <ul class="sidebar--items p-5 text-white">
+              <img
+                class="h-[100px] w-[100px] p-3"
+                src="../../assets/img/logo192.png"
+                alt="warri sports logo"
+              />
               <li class="flex items-center gap-2">
                 <span class="text-[25px] cursor-pointer"
                   ><i class="fa-light fa-house"></i
@@ -48,72 +51,111 @@
               </li>
               <li class="flex items-center gap-2">
                 <span class="text-[25px] cursor-pointer"
-                  ><i class="fa-light fa-money-bill-transfer"></i></span>
+                  ><i class="fa-light fa-money-bill-transfer"></i
+                ></span>
                 <a href="../../pages/deposit/">Deposit</a>
               </li>
               <li class="flex items-center gap-2">
                 <span class="text-[25px] cursor-pointer"
-                  ><i class="fa-light fa-ballot-check"></i></span>
+                  ><i class="fa-light fa-ballot-check"></i
+                ></span>
                 <a href="../bet/">Bet History</a>
               </li>
               <li class="flex items-center gap-2">
                 <span class="text-[25px] cursor-pointer"
-                  ><i class="fa-light fa-money-from-bracket"></i></span>
+                  ><i class="fa-light fa-money-from-bracket"></i
+                ></span>
                 <a href="../withdraw/">Withdraw</a>
               </li>
               <li class="flex items-center gap-2">
                 <span class="text-[25px] cursor-pointer"
-                  ><i class="fa-light fa-people-arrows"></i></span>
+                  ><i class="fa-light fa-credit-card"></i
+                ></span>
+                <a href="../transaction/">Transactions</a>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="text-[25px] cursor-pointer"
+                  ><i class="fa-light fa-people-arrows"></i
+                ></span>
                 <a href="../referral/">Referral</a>
               </li>
               <li class="flex items-center gap-2">
                 <span class="text-[25px] cursor-pointer"
-                  ><i class="fa-light fa-headset"></i></i></span>
-                <a href="../support/">Support</a>
-              </li>
-              <li class="flex items-center gap-2">
-                <span class="text-[25px] cursor-pointer"
-                  ><i class="fa-light fa-circle-user"></i></span>
-                <a href="../account/">My Account</a>
+                  ><i class="fa-light fa-circle-user"></i
+                ></span>
+                <a href="../my_account/">My Account</a>
               </li>
             </ul>
-             <ul class="user-detail flex items-center border-t p-5 space-x-4">
+            <ul class="user-detail flex items-center border-t p-5 space-x-4">
               <div class="user-balance text-white flex flex-col">
                 <span>Balance:</span>
                 <span>NGN: 0.00</span>
               </div>
               <div class="user--icon flex">
                 <span class="user--avatar text-[25px] text-white"
-                  ><img src="https://avatar.iran.liara.run/public/boy" class="h-10" alt="user avatar"></span>
-                <button id="dropdownMenuIconButton" data-dropdown-toggle="dropdownDots" class="inline-flex items-center p-2 text-sm font-medium text-center text-white  focus:outline-none" type="button">
-                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 4 15">
-                <path d="M3.5 1.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Zm0 6.041a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Zm0 5.959a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z"/>
-                </svg>
+                  ><img
+                    src="https://avatar.iran.liara.run/public/boy"
+                    class="h-10"
+                    alt="user avatar"
+                /></span>
+                <button
+                  id="dropdownMenuIconButton"
+                  data-dropdown-toggle="dropdownDots"
+                  class="inline-flex items-center p-2 text-sm font-medium text-center text-white focus:outline-none"
+                  type="button"
+                >
+                  <svg
+                    class="w-5 h-5"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 4 15"
+                  >
+                    <path
+                      d="M3.5 1.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Zm0 6.041a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Zm0 5.959a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z"
+                    />
+                  </svg>
                 </button>
 
                 <!-- Dropdown menu -->
-                <div id="dropdownDots" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-38 dark:bg-gray-700 dark:divide-gray-600">
-                    <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownMenuIconButton">
-                      <li>
-                        <a href="../dashboard/" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
-                      </li>
-                      <li>
-                        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sign out</a>
-                      </li>
-                    </ul>
+                <div
+                  id="dropdownDots"
+                  class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-38 dark:bg-gray-700 dark:divide-gray-600"
+                >
+                  <ul
+                    class="py-2 text-sm text-gray-700 dark:text-gray-200"
+                    aria-labelledby="dropdownMenuIconButton"
+                  >
+                    <li>
+                      <a
+                        href="../dashboard/"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        >Dashboard</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        >Sign out</a
+                      >
+                    </li>
+                  </ul>
                 </div>
               </div>
-              
             </ul>
           </div>
           <!-- SideBar ends here  -->
-           <div class="welcome absolute left-[16rem] top-[3rem] ">
-            <h1 class="text-[1.5rem] ">Welcome to Warri Sports {% user.name %}</h1>
-           </div>
-          <div class="ws-dashbaord-grid flex flex-col mx-auto place-content-center">
-            
+          <div class="welcome absolute left-[16rem] top-[3rem]">
+            <h1 class="text-[1.5rem]">
+              Welcome to Warri Sports {% user.name %}
+            </h1>
+          </div>
+          <div
+            class="ws-dashbaord-grid flex flex-col mx-auto place-content-center"
+          >
             <div
-            class="dashboard-content flex gap-5 justify-center items-center pt-5"
+              class="dashboard-content flex gap-5 justify-center items-center pt-5"
             >
               <div
                 class="bg-white w-80 h-48 shadow-lg rounded-sm flex items-center mx-auto"
@@ -197,7 +239,10 @@
       </div>
     </div>
     <!-- Ionicons Module -->
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
   </body>
 </html>
