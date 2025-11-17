@@ -138,10 +138,31 @@
           <div
             class="flex flex-col m-auto bg-white h-[35rem] w-[60rem] shadow-lg border-b-4 border-emerald-600"
           >
-          <div class="left">
-            
-          </div>
-          <div class="right"></div>
+            <div class="m-container">
+              <h4 class="uppercase p-3 bg-emerald-500 w-[8rem] text-white font-light">My profile</h4>
+                <div class="m---content grid grid-cols-2 space-x-[13.5rem] p-6">
+                  <div class="h-[28rem] w-[40rem] shadow-lg flex flex-col space-y-12 p-6">
+                    <div class="user--details font-light space-x-6">
+                      <label for="fName">First Name:</label>
+                      <span class="py-2 px-3 border-2 border-emerald-300">{% user.fName %}</span>
+                      <label for="fName">Last Name:</label>
+                      <span class="py-2 px-3 border-2 border-emerald-300">{% user.lName %}</span>
+                    </div>
+                    <div class="user--details font-light space-x-6">
+                      <label for="email">Email:</label>
+                      <span class="py-2 px-3 border-2 border-emerald-300">{% user.email %}</span>
+                      <label for="phone">Phone Number:</label>
+                      <span class="py-2 px-3 border-2 border-emerald-300">{% user.phone %}</span>
+                    </div>
+                  </div>
+                  <div class="image-card flex flex-col space-y-8">
+                    <div class="h-auto shadow-lg">
+                      <img src="../../assets/img/freepik__a-portrait-of-a-black-man-putting-on-a-jersey-and-__13645.png" alt="" class="p-1 border-2 border-emerald-600">
+                    </div>
+                    <button class="py-3 bg-emerald-400 text-white hover:bg-emerald-600">Update picture</button>
+                  </div>
+                </div>
+            </div>
         </div>
         </div>
       </div>
