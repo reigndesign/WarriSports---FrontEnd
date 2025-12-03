@@ -11,7 +11,7 @@
       content="Welcome to warrisport, your home for sports betting sites"
     />
     <!-- Title  -->
-    <title>Overview - Admin Dashboard | Warri Sports</title>
+    <title>Overview - Admin Dashboard | Warri Sport</title>
     <!-- Link the main Font Awesome CSS file -->
     <link
       rel="stylesheet"
@@ -30,10 +30,10 @@
         <div class="ws-row flex gap-4">
           <!-- SideBar Start Here -->
           <div
-          class="sideBar flex flex-col gap-60 w-[10rem] bg-emerald-500 h-screen shadow-lg"
+          class="sideBar flex flex-col gap-[8rem] w-[13rem] bg-emerald-500 h-screen shadow-lg"
           >
           <ul class="sidebar--items p-5 text-white">
-              <img class="h-[100px] w-[100px] p-3" src="../../assets/img/logo192.png" alt="warri sport logo">
+              <a href="/"><img class="h-[100px] w-[100px] p-3" src="../../assets/img/logo192.png" alt="warri sport logo"></a>
               <li class="flex items-center gap-2">
                 <span class="text-[25px] cursor-pointer"
                   ><i class="fa-light fa-house"></i
@@ -57,6 +57,12 @@
               </li>
               <li class="flex items-center gap-2">
                 <span class="text-[25px] cursor-pointer"
+                  ><i class="fa-light fa-people-arrows"></i
+                ></span>
+                <a href="../referral/">Referral</a>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="text-[25px] cursor-pointer"
                   ><i class="fa-light fa-chair-office"></i></span>
                 <a href="../career/">Career</a>
               </li>
@@ -69,21 +75,62 @@
           </div>
           <!-- SideBar ends here  -->
           <div class="main--dashboard flex flex-col m-auto justify-center space-y-3">
-             <div class="ws--dashboard-card flex space-x-1">
-              <div class="card bg-white h-[10rem] w-[12rem] border-t-4 border-emerald-600"></div>
-              <div class="card bg-white h-[10rem] w-[12rem] border-t-4 border-emerald-600"></div>
-              <div class="card bg-white h-[10rem] w-[12rem] border-t-4 border-emerald-600"></div>
-              <div class="card bg-white h-[10rem] w-[12rem] border-t-4 border-emerald-600"></div>
-              <div class="card bg-white h-[10rem] w-[12rem] border-t-4 border-emerald-600"></div>
-              <div class="card bg-white h-[10rem] w-[12rem] border-t-4 border-emerald-600"></div>
+             <div class="ws--dashboard-card flex space-x-10">
+              <div class="card bg-white h-[12rem] w-[12rem] border-t-4 border-emerald-600 drop-shadow-lg">
+                <div class="card--content p-5 space-y-3">
+                  <h2 class="font-semibold text-1xl">Today Total Played</h2>
+                  <p class="font-light text-1xl">Number of Users: <span class="font-semibold">17</span></p>
+                  <p class="font-light text-1xl">Amount: &#8358; <span class="font-semibold">108,000</span></p>
+                </div>
+              </div>
+              <div class="card bg-white h-[12rem] w-[12rem] border-t-4 border-emerald-600 drop-shadow-lg">
+                <div class="card--content p-5 space-y-3">
+                  <h2 class="font-semibold text-1xl">Today Winners List</h2>
+                  <p class="font-light text-1xl">Number of Users: <span class="font-semibold">17</span></p>
+                  <p class="font-light text-1xl">Amount: &#8358; <span class="font-semibold">25,000</span></p>
+                  <p class=" flex items-center size-14 p-2 border-2 border-[#34D399] rounded-full font-light text-sm mx-auto">
+                    <span class="font-light text-3xl">&#37;</span>10
+                  </p>
+                </div>
+              </div>
+              <div class="card bg-white h-[12rem] w-[12rem] border-t-4 border-emerald-600 drop-shadow-lg">
+                <div class="card--content p-5 space-y-3">
+                  <h2 class="font-semibold text-1xl">Today Looser List</h2>
+                  <p class="font-light text-1xl">Number of Users: <span class="font-semibold">17</span></p>
+                  <p class="font-light text-1xl">Amount: &#8358; <span class="font-semibold">25,000</span></p>
+                  <p class=" flex items-center size-14 p-2 border-2 border-[#34D399] rounded-full font-light text-sm mx-auto">
+                    <span class="font-light text-3xl">&#37;</span>10
+                  </p>
+                </div>
+              </div>
+              <div class="card bg-white h-[12rem] w-[12rem] border-t-4 border-emerald-600 drop-shadow-lg">
+                <div class="card--content p-5 space-y-3">
+                  <h2 class="font-semibold text-1xl">Number of Users</h2>
+                  <p class="font-light text-1xl">Registered Users: <span class="font-semibold">17</span></p>
+                  <p class="font-light text-1xl">Active Users: <span class="font-semibold">15</span></p>
+                  <p class=" flex items-center size-14 p-2 border-2 border-[#34D399] rounded-full font-light text-sm mx-auto">
+                    <span class="font-light text-3xl">&#37;</span> 10
+                  </p>
+                </div>
+              </div>
+              <div class="card bg-white h-[12rem] w-[12rem] border-t-4 border-emerald-600 drop-shadow-lg">
+                <div class="card--content p-5 space-y-3">
+                  <h2 class="font-semibold text-1xl">Traffic Received</h2>
+                  <p class="font-light text-1xl">State: <span class="font-semibold">Lagos</span></p>
+                  <p class="font-light text-1xl">Amount: <span class="font-semibold">15,000</span></p>
+                  <p class=" flex items-center size-14 p-2 border-2 border-[#34D399] rounded-full font-light text-sm mx-auto">
+                    <span class="font-light text-3xl">&#37;</span> 10
+                  </p>
+                </div>
+              </div>
              </div>
              <div class="ws--dashboard-card flex space-x-3">
-              <div class="card-lg bg-white h-[28rem] w-[45rem] border-t-4 border-emerald-600"></div>
+              <div class="card-lg bg-white h-[25rem] w-[45rem] border-b-4 border-emerald-600 drop-shadow-lg"></div>
               <div class="card-md space-y-3">
-                <div class="card-sm bg-white h-[8rem] w-[27.5rem] flex justify-center">
+                <!-- <div class="card-sm bg-white h-[6rem] w-[24rem] flex justify-center shadow-lg">
                   <h1 class="mt-2 font-light text-sm px-2">Top 3 Referrals</h1>
-                </div>
-                <div class="card-md bg-white h-[19.2rem] w-[27.5rem] border-t-4 border-emerald-600"></div>
+                </div> -->
+                <div class="card-md bg-white h-[18rem] w-[24rem] border-b-4 border-emerald-600 shadow-lg"></div>
               </div>
              </div>
           </div>
