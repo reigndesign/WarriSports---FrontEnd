@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta
       name="viewport"
@@ -19,125 +19,123 @@
       crossorigin="anonymous"
     />
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="../../assets/css/adminStyle.css" />
+    <link rel="stylesheet" href="../../assets/css/admin.css" />
     <!-- Tailwind CSS -->
-    <script src="../../assets/js/tailwindcss.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
-  <body>
-    <div class="wrap">
-      <!-- Main Container -->
-      <div class="container">
-        <div class="ws-row flex gap-4">
-          <!-- SideBar Start Here -->
-          <div
-          class="sideBar flex flex-col gap-[8rem] w-[13rem] bg-emerald-500 h-screen shadow-lg"
-          >
-          <ul class="sidebar--items p-5 text-white">
-              <a href="/"><img class="h-[100px] w-[100px] p-3" src="../../assets/img/logo192.png" alt="warri sport logo"></a>
-              <li class="flex items-center gap-2">
-                <span class="text-[25px] cursor-pointer"
-                  ><i class="fa-light fa-house"></i
-                ></span>
-                <a href="./">Overview</a>
-              </li>
-              <li class="flex items-center gap-2">
-                <span class="text-[25px] cursor-pointer"
-                  ><i class="fa-light fa-handshake"></i></span>
-                <a href="../p2p/">Peer2Peer</a>
-              </li>
-              <li class="flex items-center gap-2">
-                <span class="text-[25px] cursor-pointer"
-                  ><i class="fa-light fa-court-sport"></i></span>
-                <a href="../sportsbook/">Sportbook</a>
-              </li>
-              <li class="flex items-center gap-2">
-                <span class="text-[25px] cursor-pointer"
-                  ><i class="fa-light fa-money-bills"></i></span>
-                <a href="../transactions/">Transactions</a>
-              </li>
-              <li class="flex items-center gap-2">
-                <span class="text-[25px] cursor-pointer"
-                  ><i class="fa-light fa-people-arrows"></i
-                ></span>
-                <a href="../referral/">Referral</a>
-              </li>
-              <li class="flex items-center gap-2">
-                <span class="text-[25px] cursor-pointer"
-                  ><i class="fa-light fa-chair-office"></i></span>
-                <a href="../career/">Career</a>
-              </li>
-              <li class="flex items-center gap-2">
-                <span class="text-[25px] cursor-pointer"
-                  ><i class="fa-light fa-headset"></i></i></span>
-                <a href="../support/">Support</a>
-              </li>
-            </ul>
+<body>
+  <!-- Admin Dashboard Made With ❤   -->
+   <div class="hidden"></div>
+    <div class="min-h-screen relative z-0">
+      <div class="fixed top-0 h-screen bg-emerald-400/95 backdrop-blur-sm flex flex-col transition-all duration-200 w-64 md:left-0 md:z-20 right-0 z-50 translate-x-full md:translate-x-0">
+        <div class="logo p-3 border-b border-red-600/60 flex justify-center">
+          <img src="../../assets/img/logo192.png" alt="Warri Sport Logo" class="h-30">
+        </div>
+        <div dir="ltr" data-slot="sidebar-area" class="relative flex-1">
+          <div class="min-w-full table">
+            <div class="p-2 space-y-1">
+              <div class="group flex items-center p-2 gap-2 rounded-md cursor-pointer text-sm transition-color hover:bg-gray-200 text-black hover:text-white ">
+                <i class="fa-solid fa-chart-pie hover:text-white text-2xl"></i>
+                <a href="" class="truncate flex-1 text-lg">Dashboard</a>
+              </div>
+              <div class="group flex items-center p-2 gap-2 rounded-md cursor-pointer text-sm transition-color hover:bg-gray-200 text-black hover:text-white ">
+                <i class="fa-light fa-handshake text-2xl hover:text-white"></i>
+                <a href="" class="truncate flex-1 text-lg ">Peer2Peer</a>
+              </div>
+              <div class="group flex items-center p-2 gap-2 rounded-md cursor-pointer text-sm transition-color hover:bg-gray-200 text-black hover:text-white ">
+                <i class="fa-sharp fa-solid fa-court-sport text-2xl hover:text-white"></i>
+                <a href="" class="truncate flex-1 text-lg ">Sportbook</a>
+              </div>
+              <div class="group flex items-center p-2 gap-2 rounded-md cursor-pointer text-sm transition-color hover:bg-gray-200 text-black hover:text-white ">
+                <i class="fa-sharp fa-light fa-clock-rotate-left text-2xl hover:text-white"></i>
+                <a href="" class="truncate flex-1 text-lg">History</a>
+                <i class="fa-light fa-angle-down cursor-pointer hover:text-white"></i>
+              </div>
+              <div class="group flex items-center p-2 gap-2 rounded-md cursor-pointer text-sm transition-color hover:bg-gray-200 text-black hover:text-white ">
+                <i class="fa-solid fa-users hover:text-white text-2xl"></i>
+                <a href="" class="truncate flex-1 text-lg ">Users Management</a>
+              </div>
+              <div class="group flex items-center p-2 gap-2 rounded-md cursor-pointer text-sm transition-color hover:bg-gray-200 text-black hover:text-white ">
+                <i class="fa-sharp fa-solid fa-chair-office hover:text-white text-2xl"></i>
+                <a href="" class="truncate flex-1 text-lg ">Career </a>
+              </div>
+              <div class="group flex items-center p-2 gap-2 rounded-md cursor-pointer text-sm transition-color hover:bg-gray-200 text-black hover:text-white ">
+                <i class="fa-light fa-comments-question hover:text-white text-2xl"></i>
+                <a href="" class="truncate flex-1 text-lg">Support </a>
+              </div>
+            </div>
           </div>
-          <!-- SideBar ends here  -->
-          <div class="main--dashboard flex flex-col m-auto justify-center space-y-3">
-             <div class="ws--dashboard-card flex space-x-10">
-              <div class="card bg-white h-[12rem] w-[12rem] border-t-4 border-emerald-600 drop-shadow-lg">
-                <div class="card--content p-5 space-y-3">
-                  <h2 class="font-semibold text-1xl">Today Total Played</h2>
-                  <p class="font-light text-1xl">Number of Users: <span class="font-semibold">17</span></p>
-                  <p class="font-light text-1xl">Amount: &#8358; <span class="font-semibold">108,000</span></p>
-                </div>
-              </div>
-              <div class="card bg-white h-[12rem] w-[12rem] border-t-4 border-emerald-600 drop-shadow-lg">
-                <div class="card--content p-5 space-y-3">
-                  <h2 class="font-semibold text-1xl">Today Winners List</h2>
-                  <p class="font-light text-1xl">Number of Users: <span class="font-semibold">17</span></p>
-                  <p class="font-light text-1xl">Amount: &#8358; <span class="font-semibold">25,000</span></p>
-                  <p class=" flex items-center size-14 p-2 border-2 border-[#34D399] rounded-full font-light text-sm mx-auto">
-                    <span class="font-light text-3xl">&#37;</span>10
-                  </p>
-                </div>
-              </div>
-              <div class="card bg-white h-[12rem] w-[12rem] border-t-4 border-emerald-600 drop-shadow-lg">
-                <div class="card--content p-5 space-y-3">
-                  <h2 class="font-semibold text-1xl">Today Looser List</h2>
-                  <p class="font-light text-1xl">Number of Users: <span class="font-semibold">17</span></p>
-                  <p class="font-light text-1xl">Amount: &#8358; <span class="font-semibold">25,000</span></p>
-                  <p class=" flex items-center size-14 p-2 border-2 border-[#34D399] rounded-full font-light text-sm mx-auto">
-                    <span class="font-light text-3xl">&#37;</span>10
-                  </p>
-                </div>
-              </div>
-              <div class="card bg-white h-[12rem] w-[12rem] border-t-4 border-emerald-600 drop-shadow-lg">
-                <div class="card--content p-5 space-y-3">
-                  <h2 class="font-semibold text-1xl">Number of Users</h2>
-                  <p class="font-light text-1xl">Registered Users: <span class="font-semibold">17</span></p>
-                  <p class="font-light text-1xl">Active Users: <span class="font-semibold">15</span></p>
-                  <p class=" flex items-center size-14 p-2 border-2 border-[#34D399] rounded-full font-light text-sm mx-auto">
-                    <span class="font-light text-3xl">&#37;</span> 10
-                  </p>
-                </div>
-              </div>
-              <div class="card bg-white h-[12rem] w-[12rem] border-t-4 border-emerald-600 drop-shadow-lg">
-                <div class="card--content p-5 space-y-3">
-                  <h2 class="font-semibold text-1xl">Traffic Received</h2>
-                  <p class="font-light text-1xl">State: <span class="font-semibold">Lagos</span></p>
-                  <p class="font-light text-1xl">Amount: <span class="font-semibold">15,000</span></p>
-                  <p class=" flex items-center size-14 p-2 border-2 border-[#34D399] rounded-full font-light text-sm mx-auto">
-                    <span class="font-light text-3xl">&#37;</span> 10
-                  </p>
-                </div>
-              </div>
-             </div>
-             <div class="ws--dashboard-card flex space-x-3">
-              <div class="card-lg bg-white h-[25rem] w-[45rem] border-b-4 border-emerald-600 drop-shadow-lg"></div>
-              <div class="card-md space-y-3">
-                <!-- <div class="card-sm bg-white h-[6rem] w-[24rem] flex justify-center shadow-lg">
-                  <h1 class="mt-2 font-light text-sm px-2">Top 3 Referrals</h1>
-                </div> -->
-                <div class="card-md bg-white h-[18rem] w-[24rem] border-b-4 border-emerald-600 shadow-lg"></div>
-              </div>
-             </div>
+        </div>  
+        <div class="mt-auto border-t border-red-600/60 p-3 ">
+          <div class="flex items-center gap-3">
+            <div class="h-8 w-8 rounded-full flex items-center justify-center bg-gray-600/70">
+              <i class="fa-jelly fa-regular fa-user text-white"></i>
+            </div>
+            <div class="flex-1 min-w-0">
+              <p class="text-sm font-medium truncate text-white">Jerry Lewis</p>
+              <p class="text-xs truncate text-gray-400">Admin</p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <!-- Ionicons Mobule -->
+      <div class="flex flex-col min-h-screen transition-all duration-200 md:ml-64">
+        <div class="navbar bg-emerald-400/95 backdrop-blur supports-[backdrop-filter]:bg-emerald-400/60 ">
+          <div class="container flex items-center justify-between h-14 px-4 sm:px-6 mx-auto">
+            <a href="" class="flex items-center font-semibold md:ml-0 text-lg gap-2 text-white">Admin Dashboard</a>
+          </div>
+        </div>
+        <section class="flex-1 overflow-auto">
+          <div class="container mx-auto px-4 sm:px-6 py-6 sm:py-8">
+            <div class="text-start mb-6 sm:mb-10">
+              <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight mb-2 sm:mb-3 px-2 text-balance">Welcome to WarriSport</h1>
+              <p class="text-base sm:text-lg max-w-2xl mx-auto text-pretty px-4 text-gray-400/95">Play smart, Win big</p>
+            </div>
+            <div class="mt-8 sm:mt-12 md:mt-16 grid gap-4 sm:gap-6 md:grid-cols-4 max-w-6xl mx-auto">
+              <div class="p-4 sm:p-6 rounded-lg shadow-xs bg-[#FFE2E6] h-48">1</div>
+              <div class="p-4 sm:p-6 rounded-lg shadow-xs bg-[#FFF4DE] h-48">2</div>
+              <div class="p-4 sm:p-6 rounded-lg shadow-xs bg-[#DCFCE7] h-48">3</div>
+              <div class="p-4 sm:p-6 rounded-lg shadow-xs bg-[#F4E8FF] h-48">4</div>
+            </div>
+            <div class="space-y-4">
+              <div data-slot="card" class="flex gap-6 py-6 h-48">
+                <div class="flex flex-col space-y-4 ">
+                  <div class="size-[20rem] bg-white rounded-sm border-b-4 border-emerald-600/70"></div>
+                  <div class="size-[20rem] h-72 bg-white rounded-sm border-b-4 border-emerald-600/70"></div>
+                </div>
+                <div class="flex flex-col gap-4">
+                  <div class="h-40 bg-white w-72"></div>
+                  <div class="h-40 bg-white border-b-4"></div>
+                </div>
+                <div class="graph size-[20rem] bg-white border-b-4 border-emerald-400/50"></div>
+              </div>
+            </div>
+            
+          </div>
+        </section>
+        <footer class="bg-black/80 h-20 py-8 relative z-10">
+          <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+              <div class="flex items-center"></div>
+              <div class="flex items-center text-sm gap-6 text-white">
+                <span>&copy;&nbsp;2025 Warri Sport Limited</span>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+   </div>
+
+
+
+
+
+
+    <!-- Ionicons Module -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <!-- High Charts Module -->
+     <script src="https://code.highcharts.com/highcharts.js"></script>
+     <script src="https://code.highcharts.com/dashboards/dashboards.js"></script>
+     <script src="https://code.highcharts.com/dashboards/modules/layout.js"></script>
   </body>
+</body>
 </html>
