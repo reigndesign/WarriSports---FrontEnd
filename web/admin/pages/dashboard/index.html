@@ -20,14 +20,17 @@
     />
     <!-- Custom CSS -->
     <link rel="stylesheet" href="../../assets/css/admin.css" />
+    <!-- Alpine JS -->
+     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <!-- Tailwind CSS -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
-<body>
+<body class="bg-white">
   <!-- Admin Dashboard Made With ❤   -->
    <div class="hidden"></div>
     <div class="min-h-screen relative z-0">
-      <div class="fixed top-0 h-screen bg-emerald-400/95 backdrop-blur-sm flex flex-col transition-all duration-200 w-64 md:left-0 md:z-20 right-0 z-50 translate-x-full md:translate-x-0">
+      <!-- SideBar Section -->
+      <div class="fixed top-0 h-screen bg-emerald-400/70 backdrop-blur-sm flex flex-col transition-all duration-200 w-64 md:left-0 md:z-20 right-0 z-50 translate-x-full md:translate-x-0">
         <div class="logo p-3 border-b border-red-600/60 flex justify-center">
           <img src="../../assets/img/logo192.png" alt="Warri Sport Logo" class="h-30">
         </div>
@@ -36,11 +39,11 @@
             <div class="p-2 space-y-1">
               <div class="group flex items-center p-2 gap-2 rounded-md cursor-pointer text-sm transition-color hover:bg-gray-200 text-black hover:text-white ">
                 <i class="fa-solid fa-chart-pie hover:text-white text-2xl"></i>
-                <a href="" class="truncate flex-1 text-lg">Dashboard</a>
+                <a href="./" class="truncate flex-1 text-lg">Dashboard</a>
               </div>
               <div class="group flex items-center p-2 gap-2 rounded-md cursor-pointer text-sm transition-color hover:bg-gray-200 text-black hover:text-white ">
                 <i class="fa-light fa-handshake text-2xl hover:text-white"></i>
-                <a href="" class="truncate flex-1 text-lg ">Peer2Peer</a>
+                <a href="../p2p/" class="truncate flex-1 text-lg ">Peer2Peer</a>
               </div>
               <div class="group flex items-center p-2 gap-2 rounded-md cursor-pointer text-sm transition-color hover:bg-gray-200 text-black hover:text-white ">
                 <i class="fa-sharp fa-solid fa-court-sport text-2xl hover:text-white"></i>
@@ -53,7 +56,7 @@
               </div>
               <div class="group flex items-center p-2 gap-2 rounded-md cursor-pointer text-sm transition-color hover:bg-gray-200 text-black hover:text-white ">
                 <i class="fa-solid fa-users hover:text-white text-2xl"></i>
-                <a href="" class="truncate flex-1 text-lg ">Users Management</a>
+                <a href="../users-management/" class="truncate flex-1 text-lg ">Users Management</a>
               </div>
               <div class="group flex items-center p-2 gap-2 rounded-md cursor-pointer text-sm transition-color hover:bg-gray-200 text-black hover:text-white ">
                 <i class="fa-sharp fa-solid fa-chair-office hover:text-white text-2xl"></i>
@@ -72,46 +75,58 @@
               <i class="fa-jelly fa-regular fa-user text-white"></i>
             </div>
             <div class="flex-1 min-w-0">
-              <p class="text-sm font-medium truncate text-white">Jerry Lewis</p>
-              <p class="text-xs truncate text-gray-400">Admin</p>
+              <p class="text-sm font-medium truncate">Jerry Lewis</p>
+              <p class="text-xs truncate text-gray-600">Admin</p>
             </div>
           </div>
         </div>
       </div>
       <div class="flex flex-col min-h-screen transition-all duration-200 md:ml-64">
-        <div class="navbar bg-emerald-400/95 backdrop-blur supports-[backdrop-filter]:bg-emerald-400/60 ">
+        <div class="navbar bg-emerald-600/95 backdrop-blur supports-[backdrop-filter]:bg-emerald-600/60 ">
           <div class="container flex items-center justify-between h-14 px-4 sm:px-6 mx-auto">
             <a href="" class="flex items-center font-semibold md:ml-0 text-lg gap-2 text-white">Admin Dashboard</a>
           </div>
         </div>
         <section class="flex-1 overflow-auto">
-          <div class="container mx-auto px-4 sm:px-6 py-6 sm:py-8">
+          <div class="ud--container mx-auto px-4 sm:px-6 py-6 sm:py-8">
             <div class="text-start mb-6 sm:mb-10">
               <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight mb-2 sm:mb-3 px-2 text-balance">Welcome to WarriSport</h1>
               <p class="text-base sm:text-lg max-w-2xl mx-auto text-pretty px-4 text-gray-400/95">Play smart, Win big</p>
             </div>
             <div class="mt-8 sm:mt-12 md:mt-16 grid gap-4 sm:gap-6 md:grid-cols-4 max-w-6xl mx-auto">
-              <div class="p-4 sm:p-6 rounded-lg shadow-xs bg-[#FFE2E6] h-48">1</div>
+              <div class="p-4 sm:p-6 rounded-lg shadow-xs bg-[#FFE2E6] h-48">
+                
+              </div>
               <div class="p-4 sm:p-6 rounded-lg shadow-xs bg-[#FFF4DE] h-48">2</div>
               <div class="p-4 sm:p-6 rounded-lg shadow-xs bg-[#DCFCE7] h-48">3</div>
               <div class="p-4 sm:p-6 rounded-lg shadow-xs bg-[#F4E8FF] h-48">4</div>
             </div>
-            <div class="space-y-4">
-              <div data-slot="card" class="flex gap-6 py-6 h-48">
-                <div class="flex flex-col space-y-4 ">
-                  <div class="size-[20rem] bg-white rounded-sm border-b-4 border-emerald-600/70"></div>
-                  <div class="size-[20rem] h-72 bg-white rounded-sm border-b-4 border-emerald-600/70"></div>
+            <div class="grid grid-cols-3 gap-4 py-6">
+              <div class="p-4 sm:p-6p-4 sm:p-6 bg-gray-400/50 rounded-lg">
+                <div class="card--heading leading-none">
+                  <p class="text-sm font-medium truncate">Total Float</p>
+                  <span class="text-xs text-emerald-600">Accounting</span>
                 </div>
-                <div class="flex flex-col gap-4">
-                  <div class="h-40 bg-white w-72"></div>
-                  <div class="h-40 bg-white border-b-4"></div>
-                </div>
-                <div class="graph size-[20rem] bg-white border-b-4 border-emerald-400/50"></div>
               </div>
+              <div class="p-4 sm:p-6 h-38 bg-cyan-600/50 rounded-lg">
+                <div class="card--heading leading-none">
+                  <p class="text-sm font-medium truncate">Vault</p>
+                  <span class="text-xs text-emerald-600">Accounting</span>
+                </div>
+              </div>
+              <div class="p-4 sm:p-6 bg-blue-300/50 rounded-lg">
+                <div class="card--heading leading-none">
+                  <p class="text-sm font-medium truncate">House Fees</p>
+                  <span class="text-xs text-emerald-600">Accounting</span>
+                </div>
+              </div>
+              <div class="col-span-2 p-4 sm:p-6 bg-gray-400/70 h-64 rounded-lg">04</div>
+              <div class="p-4 sm:p-6 bg-emerald-400/70 h-64 rounded-lg">05</div>
             </div>
-            
           </div>
         </section>
+
+        <!-- Footer Section -->
         <footer class="bg-black/80 h-20 py-8 relative z-10">
           <div class="container mx-auto px-4">
             <div class="flex flex-col md:flex-row items-center justify-between gap-4">
