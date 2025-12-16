@@ -32,10 +32,10 @@
     <div class="wrap">
       <!-- Main Container -->
       <div class="container">
-        <div class="ws-row flex gap-8">
+        <div class="ws-row flex md:gap-8 gap-4">
           <!-- SideBar Start Here -->
           <div
-            class="sideBar flex flex-col gap-[8rem] w-[13rem] bg-emerald-500 h-screen shadow-lg"
+            class="sideBar flex flex-col md:block gap-[8rem] md:w-[13rem] w-[10rem] bg-emerald-500 h-screen shadow-lg"
           >
             <ul class="sidebar--items p-5 text-white">
               <img
@@ -89,13 +89,13 @@
             <ul class="user-detail flex items-center border-t p-5 space-x-4">
               <div class="user-balance text-white flex flex-col">
                 <span>Balance:</span>
-                <span>NGN: 0.00</span>
+                <span class="text-xs">NGN: 0.00</span>
               </div>
               <div class="user--icon flex">
                 <span class="user--avatar text-[25px] text-white"
                   ><img
                     src="https://avatar.iran.liara.run/public/boy"
-                    class="h-10"
+                    class="md:h-10 h-5"
                     alt="user avatar"
                 /></span>
                 <button
@@ -146,78 +146,63 @@
             </ul>
           </div>
           <!-- SideBar ends here  -->
-          <div class="welcome absolute left-[16rem] top-[3rem]">
-            <h1 class="text-[1.5rem]">
-              Welcome to Warri Sport {% user.name %}
-            </h1>
-          </div>
-          <div class="ws-dashbaord-grid flex w-auto m-auto">
-            <div class="grid grid-cols-2 md:grid-cols-3 grid-rows-2 gap-3">
-                <div class=" md:h-38 w-30 md:w-80 shadow-lg bg-white border-b-4 border-emerald-600">
-                  <div class="card--001 flex items-center p-10 space-x-4">
-                    <ion-icon name="wallet-outline" class="text-gray-600 text-[70px] p-[18px]" ></ion-icon>
+          <div class="ws-dashbaord-grid flex w-auto m-auto space-y-20">
+            <div class="absolute welcome--note col-span-3 mb-5 ">
+              <h1 class="md:text-[1.5rem] text-md">
+                Welcome to Warri Sport {% user.name %}
+              </h1>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-3 md:gap-5 gap-10">
+              <div class="md:h-auto w-32 h-32 md:w-80 shadow-lg bg-white border-b-4 border-emerald-600">
+                  <div class="card--001 flex flex-col md:flex-row items-center text-center md:text-start p-3 md:p-10 space-x-4">
+                    <ion-icon name="wallet-outline" class="text-gray-600 text-[30px] md:text-[70px] p-2 md:p-[18px]" ></ion-icon>
                     <div class="ws-i-paragraph">
-                      <h4 class="font-semibold">Main Balance</h4>
-                      <h1 class="text-[20px] text-[#F26C66]">&#8358; 0.00</h1>
+                      <h4 class="font-semibold text-xs md:text-sm">Main Balance</h4>
+                      <h1 class="md:text-[20px] text-[15px] text-[#F26C66]">&#8358; 0.00</h1>
                     </div>
                   </div>
                 </div>
-                <div class=" xl:h-38 w-50 md:w-80 shadow-lg bg-white border-b-4 border-emerald-600">
-                  <div class="card--002 flex items-center p-10 space-x-4">
-                    <ion-icon
-                    name="trending-up-outline"
-                    class="text-gray-600 text-[70px] p-[18px]"
-                    ></ion-icon>
+                <div class="md:h-auto w-32 h-32 md:w-80 shadow-lg bg-white border-b-4 border-emerald-600">
+                  <div class="card--001 flex flex-col md:flex-row items-center text-center md:text-start p-3 md:p-10 space-x-4">
+                    <ion-icon name="trending-up-outline" class="text-gray-600 text-[30px] md:text-[70px] p-2 md:p-[18px]" ></ion-icon>
                     <div class="ws-i-paragraph">
-                      <h4 class="font-semibold">Total Earnings</h4>
+                      <h4 class="font-semibold text-xs md:text-sm">Total Earnings</h4>
                       <h1 class="text-[20px] text-[#F26C66]">&#8358; 0.00</h1>
                     </div>
                   </div>
                 </div>
-                <div class="h25 xl:h-38 w-50 md:w-80 shadow-lg bg-white border-b-4 border-emerald-600">
-                  <div class="card--003 flex items-center p-10 space-x-4">
-                    <ion-icon
-                    name="trending-down-outline"
-                    class="text-gray-600 text-[70px] p-[18px]"
-                    ></ion-icon>
-                    <div class="ws-icons">
-                      <h4 class="font-semibold">Total Lost</h4>
+                <div class="md:h-auto w-32 h-32 md:w-80 shadow-lg bg-white border-b-4 border-emerald-600">
+                  <div class="card--002 flex flex-col md:flex-row items-center text-center md:text-start p-3 md:p-10 space-x-4">
+                    <ion-icon name="trending-down-outline" class="text-gray-600 text-[30px] md:text-[70px] p-2 md:p-[18px]" ></ion-icon>
+                    <div class="ws-i-paragraph">
+                      <h4 class="font-semibold text-xs md:text-sm">Total Lost</h4>
                       <h1 class="text-[20px] text-[#F26C66]">&#8358; 0.00</h1>
                     </div>
                   </div>
                 </div>
-                <div class="h25 xl:h-38 w-50 md:w-80 shadow-lg bg-white border-b-4 border-emerald-600">
-                  <div class="card--004 flex items-center p-10 space-x-4">
-                    <ion-icon
-                      name="ribbon-outline"
-                      class="text-gray-600 text-[70px] p-[18px]"
-                      ></ion-icon>
-                    <div div div class="ws-icons">
-                      <h4 class="font-semibold">Total Win</h4>
+                <div class="md:h-auto w-32 h-32 md:w-80 shadow-lg bg-white border-b-4 border-emerald-600">
+                  <div class="card--003 flex flex-col md:flex-row items-center text-center md:text-start p-3 md:p-10 space-x-4">
+                    <ion-icon name="ribbon-outline" class="text-gray-600 text-[30px] md:text-[70px] p-5 md:p-[18px]" ></ion-icon>
+                    <div class="ws-i-paragraph">
+                      <h4 class="font-semibold text-xs md:text-sm">Total Win</h4>
                       <h1 class="text-[20px] text-[#F26C66]">&#8358; 0.00</h1>
                     </div>
                   </div>
                 </div>
-                <div class="h25 xl:h-38 w-50 md:w-80 shadow-lg bg-white border-b-4 border-emerald-600">
-                  <div class="card--005 flex items-center p-10 space-x-4">
-                    <ion-icon
-                    name="cash-outline"
-                    class="text-gray-600 text-[70px] p-[18px]"
-                    ></ion-icon>
-                    <div class="ws-icons">
-                      <h4 class="font-semibold">Total Cashout</h4>
+                <div class="md:h-auto w-32 h-32 md:w-80 shadow-lg bg-white border-b-4 border-emerald-600">
+                  <div class="card--003 flex flex-col md:flex-row items-center text-center md:text-start p-3 md:p-10 space-x-4">
+                    <ion-icon name="cash-outline" class="text-gray-600 text-[30px] md:text-[70px] p-5 md:p-[18px]" ></ion-icon>
+                    <div class="ws-i-paragraph">
+                      <h4 class="font-semibold text-xs md:text-sm">Total Cashout</h4>
                       <h1 class="text-[20px] text-[#F26C66]">&#8358; 0.00</h1>
                     </div>
                   </div>
                 </div>
-                <div class="h25 xl:h-38 w-50 md:w-80 shadow-lg bg-white border-b-4 border-emerald-600">
-                  <div class="card--005 flex items-center p-10 space-x-4">
-                    <ion-icon
-                      name="ticket-outline"
-                      class="text-gray-600 text-[70px] p-[18px]"
-                    ></ion-icon>
-                    <div class="ws-icons">
-                      <h4 class="font-semibold">Total Bets</h4>
+                <div class="md:h-auto w-32 h-32 md:w-80 lg:w-auto shadow-lg bg-white border-b-4 border-emerald-600">
+                  <div class="card--003 flex flex-col md:flex-row items-center text-center md:text-start md:p-10 p-3 space-x-4">
+                    <ion-icon name="ticket-outline" class="text-gray-600 text-[30px] md:text-[70px] p-2 md:p-[18px]" ></ion-icon>
+                    <div class="ws-i-paragraph">
+                      <h4 class="font-semibold text-xs md:text-sm">Total Bets</h4>
                       <h1 class="text-[20px] text-[#F26C66]">&#8358; 0.00</h1>
                     </div>
                   </div>
