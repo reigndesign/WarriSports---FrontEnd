@@ -34,10 +34,9 @@
       <div class="container">
         <div class="ws-row flex md:gap-8 gap-4">
           <!-- SideBar Start Here -->
-          <div
-            class="sideBar flex flex-col md:block gap-[8rem] md:w-[13rem] w-[10rem] bg-emerald-500 h-screen shadow-lg"
-          >
-            <ul class="sidebar--items p-5 text-white">
+          <div class="sideBar flex flex-col content-around md:block gap-[8rem] md:w-[13rem] w-[10rem] bg-emerald-500 h-screen shadow-lg">
+            <div class="sidebar--items">
+              <ul class="sidebar--items p-5 text-white">
               <img
                 class="h-[100px] w-[100px] p-3"
                 src="../../assets/img/logo192.png"
@@ -86,7 +85,9 @@
                 <a href="../my_account/">My Account</a>
               </li>
             </ul>
-            <ul class="user-detail flex items-center border-t p-5 space-x-4">
+            </div>
+            <div class="sidebar--ui">
+              <ul class="user-detail flex items-center border-t p-5 space-x-4">
               <div class="user-balance text-white flex flex-col">
                 <span>Balance:</span>
                 <span class="text-xs">NGN: 0.00</span>
@@ -144,6 +145,7 @@
                 </div>
               </div>
             </ul>
+            </div>
           </div>
           <!-- SideBar ends here  -->
           <div class="ws-dashbaord-grid flex w-auto m-auto space-y-20">
