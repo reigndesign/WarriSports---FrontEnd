@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <meta
+      name="WarriSports - Play Smart, Win Big"
+      content="Welcome to warrisport, your home of sports betting sites"
+    />
+    <!-- Title  -->
+    <title>Deposit - Client Dashboard | Warri Sport</title>
+    <!-- Link the main Font Awesome CSS file -->
+    <link
+      rel="stylesheet"
+      href="../../assets/fonts/fontawesome/all.css"
+      crossorigin="anonymous"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../../assets/css/clients.css" />
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="bg-gray-100">
+    <div class="wrapper">
+      <div class="flex-container">
+        <!-- Navigation Bar Section -->
+          <div class="navbar h-16 bg-white drop-shadow-lg">
+            <nav class="navbar flex justify-between items-center">
+              <img src="../../assets/img/logo192.png" alt="" class="h-18 px-5" />
+              <div class="user--i flex items-center gap-4 p-3">
+                <i class="fa-light fa-bell text-lg  hover:text-emerald-400 cursor-pointer transition-all duration-300"></i>
+                <div class="user--text flex items-center gap-3">
+                  <h4 class="text-sm font-medium ">Larry Blues</h4>
+                  <img src="https://avatar.iran.liara.run/public/boy" alt="user avatar" class="h-10"/>
+                </div>
+                <i class="fa-light fa-angle-down cursor-pointer"></i>
+              </div>
+            </nav>
+          </div>
+          <!---Navigation bar ends here-->
+          <!-- Sidebar and Dashboard Content Starts Here -->
+           <div class="flex">
+            <!---Sidebar Section Here-->
+             <div class="flex-1 min-h-full">
+              <div class="col-start-1 sidebar w-48 h-auto fixed bg-emerald-400 py-5 hidden transition-all duration-200 translate-x-full md:translate-x-0 md:block">
+                <!-- <input class="menu-btn" type="checkbox" id="menu-btn" />
+                <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label> -->
+                <ul class="menu p-5 space-y-6 text-white">
+                  <li class="flex items-center gap-2 hover:text-black">
+                    <span class=""
+                      ><i class="fa-light fa-house fa-xl"></i
+                    ></span>
+                    <a  href="../dashboard/" class="truncate">Overview</a>
+                  </li>
+                  <li class="flex items-center gap-2 hover:text-black">
+                    <span class="text-[25px] cursor-pointer"
+                      ><i class="fa-light fa-money-bill-transfer"></i
+                    ></span>
+                    <a href="../../pages/deposit/" class="truncate">Deposit</a>
+                  </li>
+                  <li class="flex items-center gap-2 hover:text-black">
+                    <span
+                      ><i class="fa-light fa-ballot-check fa-xl"></i
+                    ></span>
+                    <a href="../bet/" class="truncate">Bet History</a>
+                  </li>
+                  <li class="flex items-center gap-2 hover:text-black">
+                    <span 
+                      ><i class="fa-light fa-money-from-bracket fa-xl"></i
+                    ></span>
+                    <a href="../withdraw/" class="truncate">Withdraw</a>
+                  </li>
+                  <li class="flex items-center gap-2 hover:text-black">
+                    <span><i class="fa-light fa-credit-card fa-xl"></i
+                    ></span>
+                    <a href="../transaction/" class="truncate">Transactions</a>
+                  </li>
+                  <li class="flex items-center gap-2 hover:text-black">
+                    <span 
+                      ><i class="fa-light fa-people-arrows fa-xl"></i
+                    ></span>
+                    <a href="../referral/" class="truncate">Referral</a>
+                  </li>
+                  <li class="flex items-center gap-2 hover:text-black">
+                    <span 
+                      ><i class="fa-light fa-circle-user fa-xl"></i
+                    ></span>
+                    <a href="../my_account/" class="truncate">My Account</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!--Dashboard Contents Here-->
+            <div class="flex-4 flex-col p-6 md:ml-10">
+              <div class="bg-white grid grid-cols-1 md:grid-cols-3 p-5 shadow-md">
+                <h2 class="text-xl font-semibold text-neutral-700 tracking-light">Withdrawal Page</h2>
+                <!-- Deposit form and related info goes here. -->
+                 <div class="deposit--form flex justify-center mt-10">
+                  <form action="#" method="post" class="space-y-6">
+                    <div class="space-y-4">
+                      <label for="amount" class="block text-sm font-medium text-gray-700">Account Information</label>
+                      <select name="deposit--type" id="deposit--type" class="mt-1 block border border-emerald-300 focus:border-emerald-500 shadow-sm p-2 outline-0 w-40 transition-border duration-200" required>
+                        <option value="">Access Bank</option>
+                        <option value="">GTbank</option>
+                      </select>
+                      <input type="text" id="amount" name="amount" class="mt-1 block border border-emerald-300 focus:border-emerald-500 shadow-sm p-2 outline-0 transition-border duration-200" placeholder="Enter account number" required>
+                    </div>  
+                    <div class="space-y-4">
+                      <lable class="block text-sm font-medium text-gray-700">Amount (NGN)</lable>
+                      <input type="text" class="mt-1 block border border-emerald-300 focus:border-emerald-500 shadow-sm p-2 outline-0" placeholder="Enter amount"/>
+                    </div>
+                    <div class="btn--deposit">
+                      <button class="mt-1 block bg-emerald-400 text-white shadow-sm px-7 py-2 cursor-pointer hover:bg-emerald-500/90 transition-all duration-200">Continue</button>
+                    </div>
+                  </form> 
+                </div>  
+              </div>
+              <!-- More deposit page content can go here -->
+                <!-- <div class="deposit--step mt-10">
+                  <div class="flex-4 flex-col items-center">
+                    <div class="deposit--step-text text-start leading-1">
+                      <h2 class="text-xl font-semibold text-neutral-700 tracking-light">Frequent asked questions</h2>
+                    </div>
+                    <div class="grid devide-y devide-neutral-200 max-w-xl mt-6">
+                      <div class="py-5">
+                        <details class="group bg-white p-4 shadow-md open:shadow-lg transition-shadow duration-200">
+                          <summary class="flex justify-between items-center cursor-pointer list-none">
+                            <span>How to make deposit?</span>
+                            <span class="transition group-open:rotate-180">
+                              <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path>
+</svg>
+                            </span>
+                          </summary>
+                          <ol class="list-decimal p-6 space-y-2 text-gray-600">
+                            <li>Enter the amount you want to deposit and click 'Deposit' button.
+
+</li>
+                            <li>You will be giving a temporary transfer account (it expires after 30 mins).</li>
+                            <li>Transfer the exact amoount entered via online banking or USSD for succesful deposit.
+
+</li>
+                            <li>Deposit usually reflect within 10 mins. If it's not successfull kindly reachout to your bank for assitance.</li>
+                          </ol>
+                        </details>
+                      </div>
+                    </div>
+                  </div>
+                </div> -->
+            </div>
+           </div>
+      </div>
+    </div>
+  </body>
+</html>
