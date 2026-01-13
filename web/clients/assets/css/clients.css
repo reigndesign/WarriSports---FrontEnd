@@ -11,12 +11,30 @@
   box-sizing: border-box;
 }
 
-/* body {
+/* @layer utilities {
+  .scrollbar-custom::-webkit-scrollbar {
+    width: 12px; /* Set the width of the vertical scrollbar */
+    height: 12px; /* Set the height of the horizontal scrollbar */
+  }
+  .scrollbar-custom::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Color of the scrollbar track */
+    border-radius: 100vh;
+  }
+  .scrollbar-custom::-webkit-scrollbar-thumb {
+    background: #888; /* Color of the scrollbar thumb (draggable part) */
+    border-radius: 100vh;
+  }
+  .scrollbar-custom::-webkit-scrollbar-thumb:hover {
+    background: #1B3C3E; /* Color on hover */
+  }
+} */
+
+
+body {
   background: #F8F9FB;
   font-family: "Fira Sans", sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-} */
+}
+
 
 
 

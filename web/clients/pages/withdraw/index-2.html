@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <meta
+      name="WarriSports - Play Smart, Win Big"
+      content="Welcome to warrisport, your home of sports betting sites"
+    />
+    <!-- Title  -->
+    <title>Withdrawal - Dashboard | Warri Sport</title>
+    <!-- Link the main Font Awesome CSS file -->
+    <link
+      rel="stylesheet"
+      href="../../assets/fonts/fontawesome/all.css"
+      crossorigin="anonymous"
+    />
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../../assets/css/clients.css" />
+    <!-- Custom JS -->
+     <script src="../../assets/js/clients.js" ></script>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Alpine JS -->
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+</head>
+<body>
+  <div class="flex-container">
+    <!-- top navbar area -->
+    <nav class="flex justify-between items-center md:px-3 bg-white h-15 shadow-lg">
+      <div class="logo-container">
+        <img src="../../assets/img/logo192.png" alt="warri sport logo" class="h-20" />
+      </div>
+      <div class="userInfo--container flex items-center gap-5">
+        <div class="notification--icon">
+          <span class="relative flex size-4">
+            <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-red-500 opacity-75"></span>
+            <span class="relative inline-flex size-2 rounded-full bg-red-500">
+              <i class="fa-light fa-bell text-lg text-emerald-800 cursor-pointer "></i>
+            </span>
+          </span>
+        </div>
+        <div class="wallet--icon">
+          <i class="fa-sharp fa-light fa-wallet text-emerald-800 text-lg"></i>
+          <span class="tracking-light text-neutral-700 font-medium">&#8358;0.00</span>
+        </div>
+        <div onclick="clickProfileMenu()" class="user--details flex items-center h-10 bg-emerald-800 rounded-full cursor-pointer">
+          <i class="fa-light fa-circle-user fa-2x text-white float-left"></i>
+          <div class="p-1 mr-2 flex items-center">                       
+            <div class="">
+                <span class="text-white text-sm font-light ml-1">Kate Horwitz</span>                              
+            </div>
+            <div class="flex">                         
+              <button class="menu flex justify-center items-center block h-3 w-3 overflow-hidden focus:outline-none"> 
+                  <div id="Seta" class="animate-ping inline-flex h-full w-full rounded-full text-gray-700 opacity-75">
+                    <svg class="h-3 w-3 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                    </svg>
+                  </div>
+              </button>                                  
+            </div>                           
+          </div>
+          <div>
+            <div id="Menu" class="flex hidden">
+              <div class="mt-2 py-2 w-48 bg-white rounded-lg shadow-xl">
+                  <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-600 hover:text-white">Perfil</a>
+                  <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-600 hover:text-white">Sair</a>
+              </div>
+            </div>   
+          </div>  
+        </div>
+             
+      </div> 
+    </nav>
+  </div>
+  <div class="grid grid-cols-1 md:grid-cols-12 p-4 gap-4">
+    <!-- Sidebar (spans all 12 columns on mobile, 3 on medium screens) -->
+    <div class="md:col-span-2 bg-emerald-800 p-4 hidden md:block rounded-lg">
+      <!-- Sidebar content here -->
+       <ul class="menu p-5 space-y-6 text-white  ">
+        <li class="flex items-center gap-2 hover:text-black">
+          <span class=""
+            ><i class="fa-light fa-house fa-xl"></i
+          ></span>
+          <a  href="../dashboard/index-2.html" class="truncate">Overview</a>
+        </li>
+        <li class="flex items-center gap-2 hover:text-black">
+          <span class="text-[25px] cursor-pointer"
+            ><i class="fa-light fa-money-bill-transfer"></i
+          ></span>
+          <a href="../deposit/index-2.html" class="truncate">Deposit</a>
+        </li>
+        <li class="flex items-center gap-2 hover:text-black">
+          <span
+            ><i class="fa-light fa-ballot-check fa-xl"></i
+          ></span>
+          <a href="../bet/index-2.html" class="truncate">Bets</a>
+        </li>
+        <li class="flex items-center gap-2 hover:text-black">
+          <span 
+            ><i class="fa-light fa-money-from-bracket fa-xl"></i
+          ></span>
+          <a href="../withdraw/index-2.html" class="truncate">Withdraw</a>
+        </li>
+        <li class="flex items-center gap-2 hover:text-black">
+          <span><i class="fa-light fa-clock-rotate-left fa-xl"></i
+          ></span>
+          <div @click.away="open = false" class="relative " x-data="{ open: false }">
+            <button @click="open = !open" class="flex items-center cursor-pointer">
+              <span class="truncate">History</span>
+              <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}" class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform "><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+            </button>
+            
+          </div>
+        </li>
+        <li class="flex items-center gap-2 hover:text-black">
+          <span 
+            ><i class="fa-light fa-people-arrows fa-xl"></i
+          ></span>
+          <a href="../referral/index-1.html" class="truncate">Referral</a>
+        </li>
+        <li class="flex items-center gap-2 hover:text-black">
+          <span 
+            ><i class="fa-light fa-circle-user fa-xl"></i
+          ></span>
+          <a href="../my_account/index-1.html" class="truncate">My Account</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Main Content Area (spans all 12 columns on mobile, 9 on medium screens) -->
+    <div class="md:col-span-10">
+      <!-- Header/Navbar -->
+      <div class="p-4  mb-4">
+        <!-- Header content here -->
+         <h1 class="text-3xl font-semibold">Withdrawal</h1>
+         <p class="text-sm font-light">Easy payout</p>
+      </div>
+
+      <!-- Main Dashboard Cards (within the 9-column space) -->
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
+        <!-- Card 2 (takes full width on small screens, 2 columns on large) -->
+        <div class="lg:col-span-2 bg-gradient-to-tr from-gray-800 to-emerald-800 p-4 shadow-lg rounded-lg">
+          <div class="grid grid-rows-1 p-4 ">
+            <a href="/" class="flex items-center p-2 gap-2 bg-white shadow-lg rounded-lg transition duration-500 ease-in-out transform hover:-translate-y-1 hover:shadow-lg">
+                <div class="image-container">
+                  <img src="../../assets/img/000000.png" alt="paystack logo" class="h-10 border-2 border-emerald-800/50 p-2"/>
+                </div>
+                <div class="flex flex-col items-start">
+                  <p class="font-semibold text-md">Bank Transfer</p>
+                  <span class="text-xs font-normal">Usually takes 10 minutes</span>
+                </div>
+              </a>
+          </div>
+        </div>
+
+        <!-- Card 1 (takes full width on small screens, 1 column on large) -->
+        <div class="lg:col-span-1 h-40 bg-gradient-to-tr from-gray-800 to-emerald-800 hidden md:block p-4 shadow-lg rounded-lg">
+          <div class="ws--balance-text">
+              <p class="font-semibold text-lg text-white">Balance</p>
+            </div>
+          <div class=" flex items-center gap-8 space-y-2">
+            <div class="flex items-center w-10 h-10 rounded-full bg-white">
+              <i class="fa-sharp fa-light fa-wallet fa-lg text-emerald-800 mx-auto"></i>
+            </div>
+            <div class="flex items-center text-white gap-3">
+              <h2 class="text-3xl font-semibold">&#8358;<span>0.00</span></h2>
+              <a href=""><i class="fa-light fa-eye fa-md text-emerald-800 text-white"></i></a>
+            </div>
+          </div>
+        </div>
+        
+        
+
+        <!-- Another full width card -->
+        <div class="lg:col-span-3 bg-gray-800 p-4 shadow-lg rounded-lg">
+          <div>
+
+        </div>
+        <div class="flex font-light text-md text-white float-right">
+          &copy; &nbsp; <p><span>2026</span> Warri Sport Limited. </p>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

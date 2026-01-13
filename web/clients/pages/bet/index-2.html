@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+  />
+  <meta
+    name="WarriSports - Play Smart, Win Big"
+    content="Welcome to warrisport, your home of sports betting sites"
+  />
+  <!-- Title  -->
+  <title>Bet History - Dashboard | Warri Sport</title>
+  <!-- Link the main Font Awesome CSS file -->
+  <link
+    rel="stylesheet"
+    href="../../assets/fonts/fontawesome/all.css"
+    crossorigin="anonymous"
+  />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" type="text/css" href="../../assets/css/clients.css" />
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+  <div class="flex-container">
+    <!-- top navbar area -->
+    <nav class="flex justify-between md:px-3 items-center shadow-lg h-15 ">
+      <div class="logo--container">
+        <img src="../../assets/img/logo192.png" alt="warri sport logo" class="h-20">
+      </div>
+      <div class="userInfo--container flex items-center gap-5">
+        <div class="notification--icon">
+          <span class="relative flex size-4">
+            <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-red-500 opacity-75"></span>
+            <span class="relative inline-flex size-2 rounded-full bg-red-500">
+              <i class="fa-light fa-bell text-lg text-emerald-800 cursor-pointer "></i>
+            </span>
+          </span>
+        </div>
+        <div class="wallet--icon">
+          <i class="fa-sharp fa-light fa-wallet text-emerald-800 text-lg"></i>
+          <span class="tracking-light text-neutral-700 font-medium">&#8358;0.00</span>
+        </div>
+        <div class="user--details flex items-center h-10 md:bg-emerald-800 rounded-full">
+          <i class="fa-light fa-circle-user fa-2x md:text-white float-left"></i>
+          
+          <span class="ml-3 hidden md:block pr-2 text-white">Kate Horwitz</span>
+          <i class="fa-light fa-angle-down cursor-pointer pr-5 md:pr-3 md:text-white"></i>
+        </div>
+      </div>
+    </nav>
+    <!--  -->
+  </div>
+  <div class="grid grid-cols-1 md:grid-cols-12 gap-4 p-4">
+  <!-- Sidebar (spans all 12 columns on mobile, 3 on medium screens) -->
+  <div class="md:col-span-2 hidden md:block bg-emerald-800 p-4 rounded-lg">
+    <!-- Sidebar content here -->
+    <ul class="menu p-5 space-y-6 text-white  ">
+      <li class="flex items-center gap-2 hover:text-black">
+        <span class=""
+          ><i class="fa-light fa-house fa-xl"></i
+        ></span>
+        <a  href="../dashboard/index-2.html" class="truncate">Overview</a>
+      </li>
+      <li class="flex items-center gap-2 hover:text-black">
+        <span class="text-[25px] cursor-pointer"
+          ><i class="fa-light fa-money-bill-transfer"></i
+        ></span>
+        <a href="../deposit/index-2.html" class="truncate">Deposit</a>
+      </li>
+      <li class="flex items-center gap-2 hover:text-black">
+        <span
+          ><i class="fa-light fa-ballot-check fa-xl"></i
+        ></span>
+        <a href="../bet/index-2.html" class="truncate">Bets</a>
+      </li>
+      <li class="flex items-center gap-2 hover:text-black">
+        <span 
+          ><i class="fa-light fa-money-from-bracket fa-xl"></i
+        ></span>
+        <a href="../withdraw/index-2.html" class="truncate">Withdraw</a>
+      </li>
+      <li class="flex items-center gap-2 hover:text-black">
+        <span><i class="fa-light fa-clock-rotate-left fa-xl"></i
+            ></span>
+        <a href="../transaction/index-1.html" class="truncate">History</a>
+      </li>
+      <li class="flex items-center gap-2 hover:text-black">
+        <span 
+          ><i class="fa-light fa-people-arrows fa-xl"></i
+        ></span>
+        <a href="../referral/index-1.html" class="truncate">Referral</a>
+      </li>
+      <li class="flex items-center gap-2 hover:text-black">
+        <span 
+          ><i class="fa-light fa-circle-user fa-xl"></i
+        ></span>
+        <a href="../my_account/index-1.html" class="truncate">My Account</a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Main Content Area (spans all 12 columns on mobile, 9 on medium screens) -->
+  <div class="md:col-span-10 ">
+    <!-- Header/Navbar -->
+    <div class="p-4 mb-4">
+      <!-- Header content here -->
+       <h1 class="text-3xl font-semibold">Bets</h1>
+       <p class="text-xs font-light">Bets History</p>
+    </div>
+
+    <!-- Header/FIlter -->
+     <div class="p-4 mb-4 max-w-2xl md:max-w-4/6 flex justify-between items-center">
+      <div class="buttons--bet flex gap-2">
+        <a href="/" class="flex items-center py-2 px-4 shadow-lg rounded-full bg-white gap-1 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:shadow-lg">
+        <span><i class="fa-light fa-ticket-simple"></i></span>
+        <span class="font-semibold">Open</span>
+      </a>
+      <a href="/" class="flex items-center py-2 px-4 shadow-lg rounded-full bg-emerald-800 gap-1 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:shadow-lg">
+        <span><i class="fa-light fa-ballot-check text-white"></i></span>
+        <span class="text-white font-semibold">Settled</span>
+      </a>
+      </div>
+      <div class="filter">
+        <a href="/" class="flex items-center py-2 px-4 shadow-lg rounded-full bg-white gap-1 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:shadow-lg">
+        <i class="fa-light fa-filters"></i>
+        <span>Filter</span>
+      </a>
+      </div>
+     </div>
+
+    <!-- Main Dashboard Cards (within the 9-column space) -->
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
+       <!-- Card 2 (takes full width on small screens, 2 columns on large) -->
+        <div class="lg:col-span-2 bg-gradient-to-tr from-gray-800 to-emerald-800 p-4 shadow-lg rounded-lg">
+          <div class="w-full overflow-x-scroll md:overflow-hidden scrollbar-custom rounded-lg border border-stone-200">
+            <table class="table-auto md:table-fixed md:w-full">
+              <thead class="border-b border-stone-200 bg-stone-100 text-sm font-medium text-stone-600">
+                <tr>
+                  <th class="px-2.5 py-2 text-start font-medium">Game</th>
+                  <th class="px-2.5 py-2 text-start font-medium">ID</th>
+                  <th class="px-2.5 py-2 text-start font-medium">Date (&#8358;)</th>
+                  <th class="px-2.5 py-2 text-start font-medium">Amount (&#8358;)</th>
+                  <th class="px-2.5 py-2 text-start font-medium">Status (&#8358;)</th>
+                  
+                  <th class="px-2.5 py-2 text-start font-medium"></th>
+                </tr>
+              </thead>
+              <tbody class="group text-sm text-stone-800">
+                <tr class="border-b border-stone-200 last:border-0">
+                  <td class="p-3 text-white">Sportbook</td>
+                  <td class="p-3 text-white">009382</td>
+                  <td class="p-3 text-white">23/04/2026</td>
+                  <td class="p-3 text-white">300</td>
+                  <td class="p-3 text-emerald-300">Won</td>
+                  <td class="p-3">
+                    <a href="#" class="font-sans antialiased text-sm text-current font-medium text-white hover:underline hover:underline-offset-4">View</a>
+                  </td>
+                </tr>
+                <tr class="border-b border-stone-200 last:border-0">
+                  <td class="p-3 text-white">Peer2Peer</td>
+                  <td class="p-3 text-white">007382</td>
+                  <td class="p-3 text-white">23/04/2026</td>
+                  <td class="p-3 text-white">500</td>
+                  <td class="p-3 text-red-400">Lost</td>
+                  <td class="p-3">
+                    <a href="#" class="font-sans antialiased text-sm text-current font-medium text-white hover:underline hover:underline-offset-4">View</a>
+                  </td>
+                </tr>
+                <tr class="border-b border-stone-200 last:border-0">
+                  <td class="p-3 text-white">Exchange</td>
+                  <td class="p-3 text-white">007382</td>
+                  <td class="p-3 text-white">10/01/2026</td>
+                  <td class="p-3 text-white">1300</td>
+                  <td class="p-3 text-gray-500">Void</td>
+                  <td class="p-3">
+                    <a href="#" class="font-sans antialiased text-sm text-current font-medium text-white hover:underline hover:underline-offset-4">View</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Card 1 (takes full width on small screens, 1 column on large) -->
+        <div class="lg:col-span-1 bg-gradient-to-tr from-gray-800 to-emerald-800 p-8 space-y-4 shadow-lg rounded-lg h-40">
+          <!-- Balance card -->
+          <div class="ws--balance-text">
+              <p class="font-semibold text-lg text-white">Balance</p>
+            </div>
+          <div class=" flex items-center gap-8 space-y-2">
+            <div class="flex items-center w-10 h-10 rounded-full bg-white">
+              <i class="fa-sharp fa-light fa-wallet fa-lg text-emerald-800 mx-auto"></i>
+            </div>
+            <div class="flex items-center text-white gap-3">
+              <h2 class="text-3xl font-semibold">&#8358;<span>0.00</span></h2>
+              <a href=""><i class="fa-light fa-eye fa-md text-emerald-800 text-white"></i></a>
+            </div>
+          </div>
+        </div>
+      
+      <!-- Another full width card -->
+      <div class="lg:col-span-3 bg-gray-800 p-4 shadow-lg rounded-lg">
+        <div>
+
+        </div>
+        <div class="flex font-light text-md text-white float-right">
+          &copy; &nbsp; <p><span>2026</span> Warri Sport Limited. </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+</body>
+</html>
