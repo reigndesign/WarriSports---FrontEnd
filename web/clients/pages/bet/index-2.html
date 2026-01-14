@@ -39,15 +39,34 @@
             </span>
           </span>
         </div>
-        <div class="wallet--icon">
-          <i class="fa-sharp fa-light fa-wallet text-emerald-800 text-lg"></i>
-          <span class="tracking-light text-neutral-700 font-medium">&#8358;0.00</span>
+        <div class="wallet--icon flex items-center gap-2">
+          <i class="fa-sharp fa-light fa-wallet fa-2x text-emerald-800"></i>
+          <span class="tracking-light text-neutral-700 text-lg font-medium">&#8358;0.00</span>
         </div>
-        <div class="user--details flex items-center h-10 md:bg-emerald-800 rounded-full">
-          <i class="fa-light fa-circle-user fa-2x md:text-white float-left"></i>
-          
-          <span class="ml-3 hidden md:block pr-2 text-white">Kate Horwitz</span>
-          <i class="fa-light fa-angle-down cursor-pointer pr-5 md:pr-3 md:text-white"></i>
+        <div class="user--details">         
+          <div class="relative inline-block text-left dropdown">
+            <span class="shadow-sm flex items-center h-10 bg-emerald-800 rounded-full"
+            >
+            <i class="fa-light fa-circle-user fa-2x text-white pl-1"></i>
+            <button class="flex w-full px-4 py-2 text-sm font-light leading-5 transition duration-500 ease-in-out text-white cursor-pointer" 
+            type="button" aria-haspopup="true" aria-expanded="true" aria-controls="headlessui-menu-items-117">
+                <span>Kate Horwitz</span>
+                <svg class="w-5 h-5 ml-2 -mr-1" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                </button
+            ></span>
+            <div class="opacity-0 invisible dropdown-menu transition-all duration-300 transform origin-top-right -translate-y-2 scale-95">
+              <div class="absolute right-0 w-56 mt-8 origin-top-right bg-white border border-emerald-200 divide-y divide-gray-100 rounded-lg shadow-lg outline-none" aria-labelledby="headlessui-menu-button-1" id="headlessui-menu-items-117" role="menu">
+                <div class="px-4 py-3 bg-emerald-800 text-white">         
+                  <p class="text-sm leading-5">Kate Horwitz</p>
+                  <p class="text-sm font-medium leading-5 truncate">&#8358;0.00</p>
+                </div>
+                <div class="py-1">
+                  <a href="javascript:void(0)" tabindex="0" class="text-gray-700 flex justify-between w-full px-4 py-4 text-sm leading-5 text-left hover:bg-emerald-800 hover:text-white transition duration-500 ease-in-out"  role="menuitem" >Account settings</a>
+                  
+                  <a href="javascript:void(0)" tabindex="1" class="text-gray-700 flex justify-between w-full px-4 py-4 text-sm leading-5 text-left hover:bg-emerald-800 hover:text-white transition duration-500 ease-in-out"  role="menuitem">Sign out</a></div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </nav>
@@ -55,45 +74,45 @@
   </div>
   <div class="grid grid-cols-1 md:grid-cols-12 gap-4 p-4">
   <!-- Sidebar (spans all 12 columns on mobile, 3 on medium screens) -->
-  <div class="md:col-span-2 hidden md:block bg-emerald-800 p-4 rounded-lg">
+  <div class="md:col-span-2 hidden md:block bg-emerald-800 p-4 rounded-lg max-h-6/6">
     <!-- Sidebar content here -->
     <ul class="menu p-5 space-y-6 text-white  ">
-      <li class="flex items-center gap-2 hover:text-black">
+      <li class="flex items-center gap-2 hover:text-gray-800 hover:text-shadow-lg hover:text-shadow-gray-800/60">
         <span class=""
           ><i class="fa-light fa-house fa-xl"></i
         ></span>
         <a  href="../dashboard/index-2.html" class="truncate">Overview</a>
       </li>
-      <li class="flex items-center gap-2 hover:text-black">
+      <li class="flex items-center gap-2 hover:text-gray-800 hover:text-shadow-lg hover:text-shadow-gray-800/60">
         <span class="text-[25px] cursor-pointer"
           ><i class="fa-light fa-money-bill-transfer"></i
         ></span>
         <a href="../deposit/index-2.html" class="truncate">Deposit</a>
       </li>
-      <li class="flex items-center gap-2 hover:text-black">
+      <li class="flex items-center gap-2 hover:text-gray-800 hover:text-shadow-lg hover:text-shadow-gray-800/60">
         <span
           ><i class="fa-light fa-ballot-check fa-xl"></i
         ></span>
         <a href="../bet/index-2.html" class="truncate">Bets</a>
       </li>
-      <li class="flex items-center gap-2 hover:text-black">
+      <li class="flex items-center gap-2 hover:text-gray-800 hover:text-shadow-lg hover:text-shadow-gray-800/60">
         <span 
           ><i class="fa-light fa-money-from-bracket fa-xl"></i
         ></span>
         <a href="../withdraw/index-2.html" class="truncate">Withdraw</a>
       </li>
-      <li class="flex items-center gap-2 hover:text-black">
+      <li class="flex items-center gap-2 hover:text-gray-800 hover:text-shadow-lg hover:text-shadow-gray-800/60">
         <span><i class="fa-light fa-clock-rotate-left fa-xl"></i
             ></span>
         <a href="../transaction/index-1.html" class="truncate">History</a>
       </li>
-      <li class="flex items-center gap-2 hover:text-black">
+      <li class="flex items-center gap-2 hover:text-gray-800 hover:text-shadow-lg hover:text-shadow-gray-800/60">
         <span 
           ><i class="fa-light fa-people-arrows fa-xl"></i
         ></span>
         <a href="../referral/index-1.html" class="truncate">Referral</a>
       </li>
-      <li class="flex items-center gap-2 hover:text-black">
+      <li class="flex items-center gap-2 hover:text-gray-800 hover:text-shadow-lg hover:text-shadow-gray-800/60">
         <span 
           ><i class="fa-light fa-circle-user fa-xl"></i
         ></span>

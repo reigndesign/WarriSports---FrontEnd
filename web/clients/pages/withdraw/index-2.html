@@ -22,7 +22,7 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="../../assets/css/clients.css" />
     <!-- Custom JS -->
-     <script src="../../assets/js/clients.js" ></script>
+     <script src="../../assets/js/clients.js" defer></script>
     <!-- Tailwind CSS -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!-- Alpine JS -->
@@ -31,7 +31,7 @@
 <body>
   <div class="flex-container">
     <!-- top navbar area -->
-    <nav class="flex justify-between items-center md:px-3 bg-white h-15 shadow-lg">
+    <nav class="flex justify-between items-center px-3 bg-white h-15 shadow-lg">
       <div class="logo-container">
         <img src="../../assets/img/logo192.png" alt="warri sport logo" class="h-20" />
       </div>
@@ -44,69 +44,69 @@
             </span>
           </span>
         </div>
-        <div class="wallet--icon">
-          <i class="fa-sharp fa-light fa-wallet text-emerald-800 text-lg"></i>
-          <span class="tracking-light text-neutral-700 font-medium">&#8358;0.00</span>
+        <div class="wallet--icon hidden md:flex items-center gap-2">
+          <i class="fa-sharp fa-light fa-wallet text-emerald-800 fa-2x"></i>
+          <span class="tracking-light text-neutral-700 font-medium text-lg">&#8358;0.00</span>
         </div>
-        <div onclick="clickProfileMenu()" class="user--details flex items-center h-10 bg-emerald-800 rounded-full cursor-pointer">
-          <i class="fa-light fa-circle-user fa-2x text-white float-left"></i>
-          <div class="p-1 mr-2 flex items-center">                       
-            <div class="">
-                <span class="text-white text-sm font-light ml-1">Kate Horwitz</span>                              
-            </div>
-            <div class="flex">                         
-              <button class="menu flex justify-center items-center block h-3 w-3 overflow-hidden focus:outline-none"> 
-                  <div id="Seta" class="animate-ping inline-flex h-full w-full rounded-full text-gray-700 opacity-75">
-                    <svg class="h-3 w-3 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                        <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
-                    </svg>
-                  </div>
-              </button>                                  
-            </div>                           
-          </div>
-          <div>
-            <div id="Menu" class="flex hidden">
-              <div class="mt-2 py-2 w-48 bg-white rounded-lg shadow-xl">
-                  <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-600 hover:text-white">Perfil</a>
-                  <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-600 hover:text-white">Sair</a>
+        <div class="user--details">         
+          <div class="relative inline-block text-left dropdown">
+            <span class="shadow-sm flex items-center h-10 bg-emerald-800 rounded-full"
+            >
+            <i class="fa-light fa-circle-user fa-2x text-white pl-1"></i>
+            <button class="flex w-full px-4 py-2 text-sm font-light leading-5 transition duration-500 ease-in-out text-white cursor-pointer" 
+            type="button" aria-haspopup="true" aria-expanded="true" aria-controls="headlessui-menu-items-117">
+                <span>Kate Horwitz</span>
+                <svg class="w-5 h-5 ml-2 -mr-1" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                </button
+            ></span>
+            <div class="opacity-0 invisible dropdown-menu transition-all duration-300 transform origin-top-right -translate-y-2 scale-95">
+              <div class="absolute right-0 w-56 mt-8 origin-top-right bg-white border border-emerald-200 divide-y divide-gray-100 rounded-lg shadow-lg outline-none" aria-labelledby="headlessui-menu-button-1" id="headlessui-menu-items-117" role="menu">
+                <div class="px-4 py-3 bg-emerald-800 text-white">         
+                  <p class="text-sm leading-5">Kate Horwitz</p>
+                  <p class="text-sm font-medium leading-5 truncate">&#8358;0.00</p>
+                </div>
+                <div class="py-1">
+                  <a href="javascript:void(0)" tabindex="0" class="text-gray-700 flex justify-between w-full px-4 py-4 text-sm leading-5 text-left hover:bg-emerald-800 hover:text-white transition duration-500 ease-in-out"  role="menuitem" >Account settings</a>
+                  
+                  <a href="javascript:void(0)" tabindex="1" class="text-gray-700 flex justify-between w-full px-4 py-4 text-sm leading-5 text-left hover:bg-emerald-800 hover:text-white transition duration-500 ease-in-out"  role="menuitem">Sign out</a></div>
               </div>
-            </div>   
-          </div>  
+            </div>
+          </div>
         </div>
-             
-      </div> 
+      </div>  
     </nav>
   </div>
   <div class="grid grid-cols-1 md:grid-cols-12 p-4 gap-4">
     <!-- Sidebar (spans all 12 columns on mobile, 3 on medium screens) -->
-    <div class="md:col-span-2 bg-emerald-800 p-4 hidden md:block rounded-lg">
+    <div class="md:col-span-2 bg-emerald-800 p-4 hidden lg:block rounded-lg max-h-6/6" id="sideNav">
       <!-- Sidebar content here -->
-       <ul class="menu p-5 space-y-6 text-white  ">
-        <li class="flex items-center gap-2 hover:text-black">
+       <ul class="menu p-5 space-y-6 text-white">
+        <li class="flex items-center gap-2 hover:text-gray-800 hover:text-shadow-lg hover:text-shadow-gray-800/60">
           <span class=""
             ><i class="fa-light fa-house fa-xl"></i
           ></span>
           <a  href="../dashboard/index-2.html" class="truncate">Overview</a>
         </li>
-        <li class="flex items-center gap-2 hover:text-black">
+        <li class="flex items-center gap-2 hover:text-gray-800 hover:text-shadow-lg hover:text-shadow-gray-800/60">
           <span class="text-[25px] cursor-pointer"
             ><i class="fa-light fa-money-bill-transfer"></i
           ></span>
           <a href="../deposit/index-2.html" class="truncate">Deposit</a>
         </li>
-        <li class="flex items-center gap-2 hover:text-black">
+        <li class="flex items-center gap-2 hover:text-gray-800 hover:text-shadow-lg hover:text-shadow-gray-800/60">
           <span
             ><i class="fa-light fa-ballot-check fa-xl"></i
           ></span>
           <a href="../bet/index-2.html" class="truncate">Bets</a>
         </li>
-        <li class="flex items-center gap-2 hover:text-black">
+        <li class="flex items-center gap-2 hover:text-gray-800 hover:text-shadow-lg hover:text-shadow-gray-800/60">
           <span 
             ><i class="fa-light fa-money-from-bracket fa-xl"></i
           ></span>
           <a href="../withdraw/index-2.html" class="truncate">Withdraw</a>
         </li>
-        <li class="flex items-center gap-2 hover:text-black">
+        <li class="flex items-center gap-2 hover:text-gray-800 hover:text-shadow-lg hover:text-shadow-gray-800/60">
+          
           <span><i class="fa-light fa-clock-rotate-left fa-xl"></i
           ></span>
           <div @click.away="open = false" class="relative " x-data="{ open: false }">
@@ -114,20 +114,19 @@
               <span class="truncate">History</span>
               <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}" class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform "><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
             </button>
-            
           </div>
         </li>
-        <li class="flex items-center gap-2 hover:text-black">
+        <li class="flex items-center gap-2 hover:text-gray-800 hover:text-shadow-lg hover:text-shadow-gray-800/60">
           <span 
             ><i class="fa-light fa-people-arrows fa-xl"></i
           ></span>
-          <a href="../referral/index-1.html" class="truncate">Referral</a>
+          <a href="../referral/index-2.html" class="truncate">Referral</a>
         </li>
-        <li class="flex items-center gap-2 hover:text-black">
+        <li class="flex items-center gap-2 hover:text-gray-800 hover:text-shadow-lg hover:text-shadow-gray-800/60">
           <span 
             ><i class="fa-light fa-circle-user fa-xl"></i
           ></span>
-          <a href="../my_account/index-1.html" class="truncate">My Account</a>
+          <a href="../my_account/index-2.html" class="truncate">My Account</a>
         </li>
       </ul>
     </div>
@@ -135,20 +134,28 @@
     <!-- Main Content Area (spans all 12 columns on mobile, 9 on medium screens) -->
     <div class="md:col-span-10">
       <!-- Header/Navbar -->
-      <div class="p-4  mb-4">
+      <div class="lg:p-4 py-4 mb-4 flex items-center gap-3">
+        <div class="md:hidden flex items-center w-10 h-10 bg-emerald-800 rounded-lg shadow-lg transform hover:-translate-y-2 hover:shadow-emerald-800/60 transition duration-500 ease-in-out cursor-pointer"> 
+          <!-- Hamburger for mobile view -->
+          <button id="menuBtn" >
+              <i class="fas fa-bars text-white fa-2x"></i> <!-- menu icon -->
+          </button>
+        </div>
         <!-- Header content here -->
-         <h1 class="text-3xl font-semibold">Withdrawal</h1>
-         <p class="text-sm font-light">Easy payout</p>
+         <div class="header--primary">
+          <h1 class="text-3xl font-semibold">Withdrawal</h1>
+          <p class="text-sm font-light">Easy payout</p>
+         </div>
       </div>
 
       <!-- Main Dashboard Cards (within the 9-column space) -->
-      <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 ">
         <!-- Card 2 (takes full width on small screens, 2 columns on large) -->
         <div class="lg:col-span-2 bg-gradient-to-tr from-gray-800 to-emerald-800 p-4 shadow-lg rounded-lg">
           <div class="grid grid-rows-1 p-4 ">
             <a href="/" class="flex items-center p-2 gap-2 bg-white shadow-lg rounded-lg transition duration-500 ease-in-out transform hover:-translate-y-1 hover:shadow-lg">
                 <div class="image-container">
-                  <img src="../../assets/img/000000.png" alt="paystack logo" class="h-10 border-2 border-emerald-800/50 p-2"/>
+                  <img src="../../assets/img/cbn-main/logos/000000.png" alt="paystack logo" class="h-10 border-2 border-emerald-800/50 p-2"/>
                 </div>
                 <div class="flex flex-col items-start">
                   <p class="font-semibold text-md">Bank Transfer</p>
@@ -159,11 +166,12 @@
         </div>
 
         <!-- Card 1 (takes full width on small screens, 1 column on large) -->
-        <div class="lg:col-span-1 h-40 bg-gradient-to-tr from-gray-800 to-emerald-800 hidden md:block p-4 shadow-lg rounded-lg">
+        <div class="lg:col-span-1 h-40 bg-gradient-to-tr from-gray-800 to-emerald-800 hidden md:hidden lg:block p-6 shadow-lg rounded-lg space-y-6">
+
           <div class="ws--balance-text">
               <p class="font-semibold text-lg text-white">Balance</p>
-            </div>
-          <div class=" flex items-center gap-8 space-y-2">
+          </div>
+          <div class="flex items-center gap-8 mx-auto">
             <div class="flex items-center w-10 h-10 rounded-full bg-white">
               <i class="fa-sharp fa-light fa-wallet fa-lg text-emerald-800 mx-auto"></i>
             </div>
@@ -173,20 +181,19 @@
             </div>
           </div>
         </div>
-        
-        
 
-        <!-- Another full width card -->
+        <!-- Footer card -->
         <div class="lg:col-span-3 bg-gray-800 p-4 shadow-lg rounded-lg">
           <div>
-
-        </div>
-        <div class="flex font-light text-md text-white float-right">
-          &copy; &nbsp; <p><span>2026</span> Warri Sport Limited. </p>
-        </div>
+  
+          </div>
+          <div class="flex font-light text-md text-white float-right">
+            &copy; &nbsp; <p><span>2026</span> Warri Sport Limited. </p>
+          </div>
         </div>
       </div>
     </div>
   </div>
+
 </body>
 </html>
