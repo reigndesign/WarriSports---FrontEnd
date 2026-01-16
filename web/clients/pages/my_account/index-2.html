@@ -32,7 +32,7 @@
 <body>
   <div class="flex-container">
     <!-- top navbar area -->
-     <nav class="flex justify-between items-center bg-white shadow-lg px-3 h-15 ">
+     <nav class="flex justify-between items-center bg-white shadow-lg px-3 h-15 overflow-hidden ">
       <div>
         <img src="../../assets/img/logo192.png" alt="warri sport logo" class="h-20">
       </div>
@@ -79,7 +79,7 @@
      <div class="container">
       <div class="grid grid-cols-1 md:grid-cols-12 p-4 gap-4">
         <!-- Sidebar (spans all 12 columns on mobile, 3 on medium screens) -->
-        <div class="md:col-span-2 bg-emerald-800 p-4 hidden lg:block rounded-lg max-h-6/6" id="sideNav">
+        <div class="md:col-span-2 bg-emerald-800 p-4 hidden lg:block rounded-lg tranform translate-x-6 lg:translate-none transition duration-500 z-10 absolute lg:relative left-10 lg:left-0" id="sideNav">
           <!-- Sidebar content here -->
           <ul class="menu p-5 space-y-6 text-white">
             <li class="flex items-center gap-2 hover:text-gray-800 hover:text-shadow-lg hover:text-shadow-gray-800/60">
@@ -135,11 +135,11 @@
         <!-- Main Content Area (spans all 12 columns on mobile, 9 on medium screens) -->
         <div class="md:col-span-10">
           <!-- Header/Navbar -->
-          <div class="lg:p-4 py-4 mb-4 flex items-center gap-3">
-            <div class="md:hidden flex items-center w-10 h-10 bg-emerald-800 rounded-lg shadow-lg transform hover:-translate-y-2 hover:shadow-emerald-800/60 transition duration-500 ease-in-out cursor-pointer"> 
+          <div class=" py-4 mb-4 flex items-center gap-3">
+            <div class="lg:hidden flex items-center w-10 h-10 bg-emerald-800 rounded-lg shadow-lg transform hover:-translate-y-2 hover:shadow-emerald-800/60 transition duration-500 ease-in-out"> 
               <!-- Hamburger for mobile view -->
               <button id="menuBtn" >
-                  <i class="fas fa-bars text-white fa-2x"></i> <!-- menu icon -->
+                  <i class="fas fa-bars text-white fa-2x cursor-pointer"></i> <!-- menu icon -->
               </button>
             </div>
             <!-- Header content here -->
@@ -153,21 +153,21 @@
           <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 ">
             <!-- Card 2 (takes full width on small screens, 2 columns on large) -->
             <div class="lg:col-span-2 bg-gradient-to-tr from-gray-800 to-emerald-800 p-4 shadow-lg rounded-lg">
-              <div class='w-full'>
+              <div class='grid grid-rows-1'>
                 <div class='px-3'>
-                    <div @click="reportsOpen = !reportsOpen" class='flex justify-between items-center text-white w-full border-b overflow-hidden md:mt-0 mb-5 mx-auto'>
-                      <div class='px-2 py-3'>
-                        <label for="" class="font-semibold text-normal">Email</label><br>
-                        <p class="text-normal font-light">igbengoos.1@gmail.com</p>
-                      </div>
-                      <a class='cursor-pointer font-semibold px-2 transform transition duration-300 ease-in-out' :class="{'rotate-90': reportsOpen,' -translate-y-0.0': !reportsOpen }">
-                        Edit        
-                      </a>
+                  <div @click="reportsOpen = !reportsOpen" class='flex justify-between items-center text-white border-b w-full overflow-hidden md:mt-0 mb-5 mx-auto'>
+                    <div class='px-2 py-3'>
+                      <label for="" class="font-semibold text-normal">Email</label><br>
+                      <p class="text-normal font-light">igbengoos.1@gmail.com</p>
                     </div>
-                    <div class="flex p-5 md:p-0 w-full transform transition duration-300 ease-in-out border-b pb-10"
-                    x-cloak x-show="reportsOpen" x-collapse x-collapse.duration.500ms >
-                      <input type="text" class="outline-none py-4 px-10" placeholder="enter your email address">
-                    </div>
+                    <a class='cursor-pointer font-semibold px-2 transform transition duration-300 ease-in-out' :class="{'rotate-90': reportsOpen,' -translate-y-0.0': !reportsOpen }">
+                      Edit        
+                    </a>
+                  </div>
+                  <div class="flex p-5 md:p-0 w-full transform transition duration-300 ease-in-out border-b pb-10"
+                  x-cloak x-show="reportsOpen" x-collapse x-collapse.duration.500ms >
+                    <input type="text" class="outline-none py-4 px-10" placeholder="enter your email address">
+                  </div>
                 </div>
               </div>
               <div class='w-full'>
@@ -192,7 +192,7 @@
                     <div @click="reportsOpen = !reportsOpen" class='flex justify-between items-center text-white w-full border-b overflow-hidden md:mt-0 mb-5 mx-auto'>
                       <div class='px-2 py-3'>
                         <label for="" class="font-semibold text-normal">Personal Details</label><br>
-                        <p class="text-normal font-light">View your personl details</p>
+                        <p class="text-normal font-light">View your personal details</p>
                       </div>
                       <a class='cursor-pointer font-semibold px-2 transform transition duration-300 ease-in-out' :class="{'rotate-90': reportsOpen,' -translate-y-0.0': !reportsOpen }">
                         Edit        

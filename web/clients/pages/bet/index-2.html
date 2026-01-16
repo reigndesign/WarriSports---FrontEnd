@@ -18,6 +18,13 @@
     href="../../assets/fonts/fontawesome/all.css"
     crossorigin="anonymous"
   />
+  <!-- Custom JS -->
+     <script src="../../assets/js/clients.js" defer></script>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Alpine JS -->
+    <script src="https://unpkg.com/alpinejs@3.15.4/dist/cdn.min.js" defer></script>
+    <script src="https://unpkg.com/@alpinejs/collapse@3.x.x/dist/cdn.min.js" defer></script>
   <!-- Custom CSS -->
   <link rel="stylesheet" type="text/css" href="../../assets/css/clients.css" />
   <!-- Tailwind CSS -->
@@ -26,7 +33,7 @@
 <body>
   <div class="flex-container">
     <!-- top navbar area -->
-    <nav class="flex justify-between md:px-3 items-center shadow-lg h-15 ">
+    <nav class="flex justify-between md:px-3 px-1 items-center shadow-lg h-15 ">
       <div class="logo--container">
         <img src="../../assets/img/logo192.png" alt="warri sport logo" class="h-20">
       </div>
@@ -74,7 +81,7 @@
   </div>
   <div class="grid grid-cols-1 md:grid-cols-12 gap-4 p-4">
   <!-- Sidebar (spans all 12 columns on mobile, 3 on medium screens) -->
-  <div class="md:col-span-2 hidden md:block bg-emerald-800 p-4 rounded-lg max-h-6/6">
+  <div class="md:col-span-2 hidden lg:block bg-emerald-800 p-4 rounded-lg max-h-6/6 tranform translate-x-6 lg:translate-none transition duration-500 z-10 absolute lg:relative left-10 lg:left-0" id="sideNav">
     <!-- Sidebar content here -->
     <ul class="menu p-5 space-y-6 text-white  ">
       <li class="flex items-center gap-2 hover:text-gray-800 hover:text-shadow-lg hover:text-shadow-gray-800/60">
@@ -116,18 +123,27 @@
         <span 
           ><i class="fa-light fa-circle-user fa-xl"></i
         ></span>
-        <a href="../my_account/index-1.html" class="truncate">My Account</a>
+        <a href="../my_account/index-2.html" class="truncate">My Account</a>
       </li>
     </ul>
   </div>
 
   <!-- Main Content Area (spans all 12 columns on mobile, 9 on medium screens) -->
-  <div class="md:col-span-10 ">
+  <div class="md:col-span-10">
+    <!-- hamburger -->
     <!-- Header/Navbar -->
-    <div class="p-4 mb-4">
+    <div class="py-4 mb-4 flex items-center gap-3">
+      <div class="lg:hidden flex items-center w-10 h-10 bg-emerald-800 rounded-lg shadow-lg transform hover:-translate-y-2 hover:shadow-emerald-800/60 transition duration-500 ease-in-out"> 
+       <!-- Hamburger for mobile view -->
+       <button id="menuBtn" >
+           <i class="fas fa-bars text-white fa-2x cursor-pointer"></i> <!-- menu icon -->
+       </button>
+      </div>
       <!-- Header content here -->
-       <h1 class="text-3xl font-semibold">Bets</h1>
-       <p class="text-xs font-light">Bets History</p>
+       <div class="ws--headline flex flex-col">
+        <h1 class="text-3xl font-semibold">Bets</h1>
+        <p class="text-xs font-light">Bets History</p>
+       </div>
     </div>
 
     <!-- Header/FIlter -->
@@ -204,7 +220,7 @@
         </div>
 
         <!-- Card 1 (takes full width on small screens, 1 column on large) -->
-        <div class="lg:col-span-1 bg-gradient-to-tr from-gray-800 to-emerald-800 p-8 space-y-4 shadow-lg rounded-lg h-40">
+        <div class="lg:col-span-1 hidden md:block bg-gradient-to-tr from-gray-800 to-emerald-800 p-8 space-y-4 shadow-lg rounded-lg h-40">
           <!-- Balance card -->
           <div class="ws--balance-text">
               <p class="font-semibold text-lg text-white">Balance</p>

@@ -78,7 +78,7 @@
   </div>
   <div class="grid grid-cols-1 md:grid-cols-12 p-4 gap-4">
     <!-- Sidebar (spans all 12 columns on mobile, 3 on medium screens) -->
-    <div class="md:col-span-2 bg-emerald-800 p-4 hidden lg:block rounded-lg max-h-6/6" id="sideNav">
+    <div class="md:col-span-2 bg-emerald-800 p-4 hidden lg:block rounded-lg max-h-6/6 tranform translate-x-6 lg:translate-none transition duration-500 z-10 absolute lg:relative left-10 lg:left-0" id="sideNav">
       <!-- Sidebar content here -->
        <ul class="menu p-5 space-y-6 text-white">
         <li class="flex items-center gap-2 hover:text-gray-800 hover:text-shadow-lg hover:text-shadow-gray-800/60">
@@ -134,11 +134,11 @@
     <!-- Main Content Area (spans all 12 columns on mobile, 9 on medium screens) -->
     <div class="md:col-span-10">
       <!-- Header/Navbar -->
-      <div class="lg:p-4 py-4 mb-4 flex items-center gap-3">
-        <div class="md:hidden flex items-center w-10 h-10 bg-emerald-800 rounded-lg shadow-lg transform hover:-translate-y-2 hover:shadow-emerald-800/60 transition duration-500 ease-in-out cursor-pointer"> 
+      <div class="py-4 mb-4 flex items-center gap-3">
+        <div class="lg:hidden flex items-center w-10 h-10 bg-emerald-800 rounded-lg shadow-lg transform hover:-translate-y-2 hover:shadow-emerald-800/60 transition duration-500 ease-in-out "> 
           <!-- Hamburger for mobile view -->
           <button id="menuBtn" >
-              <i class="fas fa-bars text-white fa-2x"></i> <!-- menu icon -->
+              <i class="fas fa-bars text-white fa-2x cursor-pointer"></i> <!-- menu icon -->
           </button>
         </div>
         <!-- Header content here -->

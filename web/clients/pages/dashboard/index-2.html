@@ -18,6 +18,13 @@
       href="../../assets/fonts/fontawesome/all.css"
       crossorigin="anonymous"
     />
+    <!-- Custom JS -->
+     <script src="../../assets/js/clients.js" defer></script>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Alpine JS -->
+    <script src="https://unpkg.com/alpinejs@3.15.4/dist/cdn.min.js" defer></script>
+    <script src="https://unpkg.com/@alpinejs/collapse@3.x.x/dist/cdn.min.js" defer></script>
     <!-- Custom CSS -->
     <link rel="stylesheet" href="../../assets/css/clients.css" />
     <!-- Tailwind CSS -->
@@ -44,7 +51,7 @@
           <span class="tracking-light text-neutral-700 text-lg font-medium">&#8358;0.00</span>
         </div>
         <div class="user--details">         
-          <div class="relative inline-block text-left dropdown">
+          <div class="relative inline-block z-10 text-left dropdown">
             <span class="shadow-sm flex items-center h-10 bg-emerald-800 rounded-full"
             >
             <i class="fa-light fa-circle-user fa-2x text-white pl-1"></i>
@@ -73,9 +80,9 @@
     <!--  -->
     <div class="grid grid-cols-1 md:grid-cols-12 gap-4 p-4">
       <!-- Sidebar (spans all 12 columns on mobile, 3 on medium screens) -->
-      <div class="hidden md:block md:col-span-2 bg-emerald-800 rounded-lg p-4 max-h-6/6">
+      <div class="hidden lg:block md:col-span-2 bg-emerald-800 rounded-lg p-4 max-h-6/6 tranform translate-x-6 lg:translate-none transition duration-500 z-10 absolute lg:relative left-10 lg:left-0 " id="sideNav">
         <!-- Sidebar content here -->
-        <ul class="menu p-5 space-y-6 text-white  ">
+        <ul class="menu p-5 space-y-6 text-white">
           <li class="flex items-center gap-2 hover:text-gray-800 hover:text-shadow-lg hover:text-shadow-gray-800/60">
             <span class=""
               ><i class="fa-light fa-house fa-xl"></i
@@ -123,10 +130,18 @@
       <!-- Main Content Area (spans all 12 columns on mobile, 9 on medium screens) -->
       <div class="md:col-span-10">
         <!-- Header/Navbar -->
-        <div class="p-4 mb-4">
+        <div class="py-4 mb-4 flex items-center gap-3">
+          <div class="lg:hidden flex items-center w-10 h-10 bg-emerald-800 rounded-lg shadow-lg transform hover:-translate-y-2 hover:shadow-emerald-800/60 transition duration-500 ease-in-out"> 
+          <!-- Hamburger for mobile view -->
+            <button id="menuBtn" >
+                <i class="fas fa-bars text-white fa-2x cursor-pointer"></i> <!-- menu icon -->
+            </button>
+          </div>
           <!-- Header content here -->
-           <h1 class="text-3xl font-semibold">Account Overview</h1>
+           <div class="ws--headline flex flex-col">
+            <h1 class="text-3xl font-semibold">Account Overview</h1>
             <p class="text-xs font-light mt-1">Welcome to Warri Sport Limited</p>
+           </div>
         </div>
 
         <!-- Main Dashboard Cards (within the 9-column space) -->
