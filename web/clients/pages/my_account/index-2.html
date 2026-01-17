@@ -32,7 +32,7 @@
 <body>
   <div class="flex-container">
     <!-- top navbar area -->
-     <nav class="flex justify-between items-center bg-white shadow-lg px-3 h-15 overflow-hidden ">
+     <nav class="flex justify-between items-center bg-white shadow-lg px-3 h-15">
       <div>
         <img src="../../assets/img/logo192.png" alt="warri sport logo" class="h-20">
       </div>
@@ -45,12 +45,12 @@
             </span>
           </span>
         </div>
-        <div class="wallet--icon hidden md:flex items-center gap-2">
-          <i class="fa-sharp fa-light fa-wallet text-emerald-800 fa-2x"></i>
-          <span class="tracking-light text-neutral-700 font-medium text-lg">&#8358;0.00</span>
+        <div class="wallet--icon hidden lg:flex items-center gap-2">
+          <i class="fa-sharp fa-light fa-wallet fa-2x text-emerald-800"></i>
+          <span class="tracking-light text-neutral-700 text-lg font-medium">&#8358;0.00</span>
         </div>
         <div class="user--details">         
-          <div class="relative inline-block text-left dropdown">
+          <div class="relative inline-block z-10 text-left dropdown">
             <span class="shadow-sm flex items-center h-10 bg-emerald-800 rounded-full"
             >
             <i class="fa-light fa-circle-user fa-2x text-white pl-1"></i>
@@ -74,12 +74,12 @@
             </div>
           </div>
         </div>
-      </div>  
+      </div>   
      </nav>
      <div class="container">
       <div class="grid grid-cols-1 md:grid-cols-12 p-4 gap-4">
         <!-- Sidebar (spans all 12 columns on mobile, 3 on medium screens) -->
-        <div class="md:col-span-2 bg-emerald-800 p-4 hidden lg:block rounded-lg tranform translate-x-6 lg:translate-none transition duration-500 z-10 absolute lg:relative left-10 lg:left-0" id="sideNav">
+        <div class="md:col-span-2 bg-gradient-to-tr from-gray-800 to-emerald-800 shadow-lg p-4 hidden lg:block rounded-lg tranform translate-x-6 lg:translate-none transition duration-500 z-10 absolute lg:relative left-10 lg:left-0" id="sideNav">
           <!-- Sidebar content here -->
           <ul class="menu p-5 space-y-6 text-white">
             <li class="flex items-center gap-2 hover:text-gray-800 hover:text-shadow-lg hover:text-shadow-gray-800/60">

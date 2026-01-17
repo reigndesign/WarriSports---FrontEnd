@@ -46,7 +46,7 @@
             </span>
           </span>
         </div>
-        <div class="wallet--icon flex items-center gap-2">
+        <div class="wallet--icon hidden lg:flex items-center gap-2">
           <i class="fa-sharp fa-light fa-wallet fa-2x text-emerald-800"></i>
           <span class="tracking-light text-neutral-700 text-lg font-medium">&#8358;0.00</span>
         </div>
@@ -81,7 +81,7 @@
   </div>
   <div class="grid grid-cols-1 md:grid-cols-12 gap-4 p-4">
   <!-- Sidebar (spans all 12 columns on mobile, 3 on medium screens) -->
-  <div class="md:col-span-2 hidden lg:block bg-emerald-800 p-4 rounded-lg max-h-6/6 tranform translate-x-6 lg:translate-none transition duration-500 z-10 absolute lg:relative left-10 lg:left-0" id="sideNav">
+  <div class="md:col-span-2 hidden lg:block bg-gradient-to-tr from-gray-800 to-emerald-800 shadow-lg p-4 rounded-lg max-h-6/6 tranform translate-x-6 lg:translate-none transition duration-500 z-10 absolute lg:relative left-10 lg:left-0" id="sideNav">
     <!-- Sidebar content here -->
     <ul class="menu p-5 space-y-6 text-white  ">
       <li class="flex items-center gap-2 hover:text-gray-800 hover:text-shadow-lg hover:text-shadow-gray-800/60">
@@ -111,13 +111,13 @@
       <li class="flex items-center gap-2 hover:text-gray-800 hover:text-shadow-lg hover:text-shadow-gray-800/60">
         <span><i class="fa-light fa-clock-rotate-left fa-xl"></i
             ></span>
-        <a href="../transaction/index-1.html" class="truncate">History</a>
+        <a href="../transaction/index-2.html" class="truncate">History</a>
       </li>
       <li class="flex items-center gap-2 hover:text-gray-800 hover:text-shadow-lg hover:text-shadow-gray-800/60">
         <span 
           ><i class="fa-light fa-people-arrows fa-xl"></i
         ></span>
-        <a href="../referral/index-1.html" class="truncate">Referral</a>
+        <a href="../referral/index-2.html" class="truncate">Referral</a>
       </li>
       <li class="flex items-center gap-2 hover:text-gray-800 hover:text-shadow-lg hover:text-shadow-gray-800/60">
         <span 
@@ -148,7 +148,7 @@
 
     <!-- Header/FIlter -->
      <div class="p-4 mb-4 max-w-2xl md:max-w-4/6 flex justify-between items-center">
-      <div class="buttons--bet flex gap-2">
+      <div class="hidden lg:flex buttons--bet gap-2">
         <a href="/" class="flex items-center py-2 px-4 shadow-lg rounded-full bg-white gap-1 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:shadow-lg">
         <span><i class="fa-light fa-ticket-simple"></i></span>
         <span class="font-semibold">Open</span>
@@ -157,7 +157,14 @@
         <span><i class="fa-light fa-ballot-check text-white"></i></span>
         <span class="text-white font-semibold">Settled</span>
       </a>
-      </div>
+    </div>
+    <!-- Mobile View -->
+     <div class="m--button-bet block  lg:hidden">
+      <select name="" id="" class="py-2 px-5 outline-0 border focus:border-emerald-800 shadow-lg rounded-lg">
+        <option value="">Open</option>
+        <option value="">Settled</option>
+      </select>
+     </div>
       <div class="filter">
         <a href="/" class="flex items-center py-2 px-4 shadow-lg rounded-full bg-white gap-1 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:shadow-lg">
         <i class="fa-light fa-filters"></i>
